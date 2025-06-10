@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background: linear-gradient(to bottom, #000000, transparent);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  color: black;
+  padding: 0 150px;
+  gap: 80px;
+  justify-content: space-around;
+}
+.logo{
+  width: 50px;
+  height: min-content;
+  margin-right: 20px;
+}
+.menu{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.fi{
+  cursor: pointer;
+
+}
