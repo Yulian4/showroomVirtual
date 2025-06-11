@@ -1,9 +1,9 @@
 :root {
     --negro: #0d0d0d;
-    --rojo: #096ce5;
-    --gris-claro: #f5f5f5;
+    --rojo: #096ce5af;
+    --gris-claro: #757474;
     --gris-oscuro: #aaaaaa;
-    --degrade: linear-gradient(to bottom, #ffffff, #464545);
+    --degrade: linear-gradient(to bottom, #000000, #363434, #a19a9a);
     --fuente: 'Orbitron', sans-serif;
 }
 
@@ -137,7 +137,7 @@ header {
 
 .fi {
     cursor: pointer;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.7rem;
 }
 
@@ -162,11 +162,11 @@ header {
 
 .modelo {
     font-family: var(--fuente);
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--gris-claro);
     text-shadow: 0 0 10px var(--rojo);
     position: relative;
-    top: 190px;
+    top: 220px;
     z-index: 2;
     margin-bottom: -10px;
 }
@@ -209,12 +209,12 @@ header {
     max-width: 500vw;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
 }
 
 .vistas-carro img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px var(--rojo);
+    /* box-shadow: 0 0 20px var(--rojo); */
     padding-bottom: 20px;
 }
 
@@ -223,4 +223,10 @@ header {
     font-size: 1.1rem;
     color: var(--gris-claro);
     text-align: justify;
+}
+
+.numero {
+    text-align: center;
+    font-size: 100px;
+    color: white;
 }
