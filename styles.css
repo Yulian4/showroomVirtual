@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 :root {
     --negro: #0d0d0d;
     --rojo: #096ce5af;
-    --gris-claro: #757474;
+    --gris-claro: #ffffff;
     --gris-oscuro: #aaaaaa;
     --degrade: linear-gradient(to bottom, #000000, #363434, #a19a9a);
     --fuente: 'Orbitron', sans-serif;
@@ -198,6 +200,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
 }
 
 .vista2 {
@@ -229,4 +232,6 @@ header {
     text-align: center;
     font-size: 100px;
     color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
 }
