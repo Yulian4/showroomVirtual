@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Orbitron", sans-serif;
 }
 
 header {
@@ -16,7 +19,6 @@ header {
   position: absolute;
   z-index: 10;
   background: none;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -33,14 +35,21 @@ header {
   z-index: 999;
 }
 
+#btnMenu:hover {
+  background-color: #1c1c1cb7;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  padding: 4px;
+}
+
 .sideMenu {
   position: fixed;
   top: 12vh;
   left: -300px;
   width: 300px;
-  height: 100vh;
+  height: 50vh;
   background: #1c1c1cb7;
-  padding: 20px;
+  padding: 30px;
   transition: left 0.3s ease;
   z-index: 1000;
   border-radius: 10px;
@@ -52,12 +61,13 @@ header {
 
 .sideMenu ul {
   list-style: none;
-  padding: 0;
+  padding: 2vh 0 0 5vh;
   margin: 0;
+  text-align: left;
 }
 
 .sideMenu li {
-  padding: 20px 10px;
+  padding: 22px 10px;
   cursor: pointer;
   position: relative;
 }
@@ -81,8 +91,8 @@ header {
   top: 12vh;
   left: 300px;
   width: 350px;
-  height: 100%;
-  background: #222;
+  height: 50vh;
+  background: #222222ce;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -94,16 +104,8 @@ header {
   border-radius: 10px;
 }
 
-.submenu-galeria a {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .submenu-galeria img {
-  width: 80px;
+  width: 280px;
   border-radius: 8px;
   transition: transform 0.3s;
 }
@@ -121,15 +123,10 @@ header {
   cursor: pointer;
 }
 
-
-
-
-
-
 .fi {
   cursor: pointer;
   color: white;
- font-size: 1.7rem; 
+  font-size: 1.7rem;
 }
 
 /*primer section de index*/
@@ -139,6 +136,7 @@ video {
   object-fit: cover;
   object-position: center;
 }
+
 .section-ppal {
   position: relative;
   width: 100%;
@@ -150,17 +148,20 @@ video {
   display: flex;
   flex-direction: column;
   left: 60%;
-  top: 80%;
+  top: 70%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 3rem;
-}
-h1{
-  font-size: 3rem;
   text-align: right;
+  gap: 30px;
 
 }
-.btn-sectionPpal{
+
+h1 {
+  font-size: 4rem;
+}
+
+.btn-sectionPpal {
   width: fit-content;
   cursor: pointer;
   padding: 10px;
@@ -168,5 +169,6 @@ h1{
   background: none;
   color: white;
   border: 1px solid white;
-  
+  align-self: flex-end;
+  font-size: 1rem;
 }
