@@ -1,31 +1,172 @@
-*{
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
-header{
-  background: linear-gradient(to bottom, #000000, transparent);
+
+header {
   color: white;
-  padding: 10px;
+  width: 100vw;
   text-align: center;
   display: flex;
   align-items: center;
-  height: 8vh;
-  color: black;
-  padding: 0 150px;
-  gap: 80px;
-  justify-content: space-around;
+  height: 12vh;
+  padding: 20px 150px;
+  gap: 3vw;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  background: none;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
-.logo{
-  width: 50px;
-  height: min-content;
-  margin-right: 20px;
-}
-.menu{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.fi{
-  cursor: pointer;
 
+
+#btnMenu {
+  font-size: 1rem;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.sideMenu {
+  position: fixed;
+  top: 12vh;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: #1c1c1cb7;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.sideMenu.open {
+  left: 0;
+}
+
+.sideMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideMenu li {
+  padding: 20px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sideMenu li:hover {
+  background-color: #333333be;
+}
+
+/* Submenú tipo galería */
+.has-submenu:hover .submenu-galeria {
+  opacity: 1;
+  visibility: visible;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu-galeria {
+  position: fixed;
+  top: 12vh;
+  left: 300px;
+  width: 350px;
+  height: 100%;
+  background: #222;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  z-index: 2000;
+  border-radius: 10px;
+}
+
+.submenu-galeria a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submenu-galeria img {
+  width: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.submenu-galeria img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.logo {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.fi {
+  cursor: pointer;
+  color: white;
+ font-size: 1.7rem; 
+}
+
+/*primer section de index*/
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.section-ppal {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.info-video {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 60%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+}
+h1{
+  font-size: 3rem;
+  text-align: right;
+
+}
+.btn-sectionPpal{
+  width: fit-content;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  
 }
