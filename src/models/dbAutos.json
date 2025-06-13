@@ -4,7 +4,7 @@
     "modelos": [
       {
         "name": "Civetta NeoPulse",
-        "img_url": "carr.png",
+        "img_url": "carro.png",
         "id": 1,
         "descripcion": "Sedán compacto de diseño moderno, ideal para la ciudad, con gran eficiencia de combustible."
       },
