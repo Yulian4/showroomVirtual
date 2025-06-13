@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ctalogo</title>
+
+		<link rel="stylesheet" href="/public/css/index.css" />
+		<link rel="stylesheet" href="/public/css/style.css" />
+
+		<script src="/public/js/script-catalog.js"></script>
+	</head>
+	<body>
+		<header>
+			<button id="btnMenu">☰ Menú</button>
+			<img class="logo" src="/public/img/assets/logoLUNE.png" alt="LUNE" />
+			<i class="fi fi-rr-messages"></i>
+
+			<nav class="sideMenu" id="sideMenu">
+				<ul>
+					<li class="has-submenu">
+						Nuestros modelos
+						<div class="submenu-galeria">
+							<h3 class="title-catalogo">Catalogo Carros</h3>
+							<a href="/src/views/catalog.html"
+								><img
+									src="assets/images/coche-3d-con-fondo-simple.jpg"
+									alt=""
+							/></a>
+							<h3 class="title-catalogo">Catalogo Motos</h3>
+							<a href="#"
+								><img
+									src="assets/images/coche-3d-con-fondo-simple.jpg"
+									alt=""
+							/></a>
+						</div>
+					</li>
+					<li>Proximos modelos</li>
+					<li>Agenda tu Asesoría</li>
+					<li>Acerca de</li>
+					<li>Accesorios originales</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<aside class="aside aside-vehiculo">
+				<ul>
+					<h3 class="h3 h3-sub_titulo_aside">CARROS</h3>
+					<li class="li li--hover" data-tipo="Sedán">
+						<span>Sedan</span>
+					</li>
+					<li class="li li--hover" data-tipo="Todoterreno">
+						<span>Todoterreno</span>
+					</li>
+					<li class="li li--hover" data-tipo="Deportivo">
+						<span>Deportivos</span>
+					</li>
+					<li class="li li--hover" data-tipo="SUV / Familiar">
+						<span>SUV / Familiar</span>
+					</li>
+					<li class="li li--hover" data-tipo="Eléctrico">
+						<span>Electrico</span>
+					</li>
+				</ul>
+			</aside>
+			<aside class="aside aside--modelos" id="aside-modelos">
+				<!-- Aquí se mostrarán los modelos -->
+			</aside>
+			<section class="section img-vista-previa" id="img-vista-previa">
+				<!-- se renderiza con al script-catalog.js  -->
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>

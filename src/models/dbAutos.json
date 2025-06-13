@@ -1,0 +1,183 @@
+[
+  {
+    "tipo": "Sedán",
+    "modelos": [
+      {
+        "name": "Civetta NeoPulse",
+        "img_url": "carr.png",
+        "id": 1,
+        "descripcion": "Sedán compacto de diseño moderno, ideal para la ciudad, con gran eficiencia de combustible."
+      },
+      {
+        "name": "Velux MetroX",
+        "img_url": "carro.png",
+        "id": 2,
+        "descripcion": "Confort urbano y manejo suave, perfecto para el día a día con tecnología inteligente integrada."
+      },
+      {
+        "name": "Aurelia Luxor",
+        "img_url": "carro2f.png",
+        "id": 3,
+        "descripcion": "Sedán ejecutivo con interiores de lujo y asistencias avanzadas al conductor."
+      },
+      {
+        "name": "Stellar Glide 300",
+        "img_url": "carro2f2.png",
+        "id": 4,
+        "descripcion": "Equilibrio entre rendimiento y elegancia, con gran espacio interior y conectividad total."
+      },
+      {
+        "name": "Orion Nova 5",
+        "img_url": "carro2ld.png",
+        "id": 5,
+        "descripcion": "Sedán futurista con diseño aerodinámico y sistema de seguridad de última generación."
+      }
+    ]
+  },
+  {
+    "tipo": "Todoterreno",
+    "modelos": [
+      {
+        "name": "Terralux Raptor 4X",
+        "img_url": "carro2t.png",
+        "id": 6,
+        "descripcion": "Diseñado para caminos extremos, con tracción 4x4 y suspensión reforzada."
+      },
+      {
+        "name": "Gravitas TrailMaster",
+        "img_url": "carro2t.png",
+        "id": 7,
+        "descripcion": "Robusto y resistente, ideal para aventuras off-road y climas difíciles."
+      },
+      {
+        "name": "Monzter TrailEdge",
+        "img_url": "carro2t.png",
+        "id": 8,
+        "descripcion": "Potente todoterreno con gran altura al suelo y capacidad de carga."
+      },
+      {
+        "name": "Rockway Titan Pro",
+        "img_url": "carro2.png",
+        "id": 9,
+        "descripcion": "Ideal para terrenos duros, con diseño imponente y motor de alto torque."
+      },
+      {
+        "name": "GravaMax Dune 800",
+        "img_url": "carro2t.png",
+        "id": 10,
+        "descripcion": "Conquista dunas y caminos rurales con facilidad, gracias a su motor V8."
+      },
+      {
+        "name": "Orion Nomad XT",
+        "img_url": "carro2t.png",
+        "id": 11,
+        "descripcion": "Combina estilo urbano con capacidades off-road, ideal para viajes largos."
+      }
+    ]
+  },
+  {
+    "tipo": "Deportivo",
+    "modelos": [
+      {
+        "name": "Veltor Strike V12",
+        "img_url": "carro2.png",
+        "id": 12,
+        "descripcion": "Superdeportivo con motor V12, diseñado para velocidad extrema y máxima adrenalina."
+      },
+      {
+        "name": "Aurelion GT Nova",
+        "img_url": "carro2f.png",
+        "id": 13,
+        "descripcion": "Diseño aerodinámico con tracción trasera, ideal para conducción en pista."
+      },
+      {
+        "name": "Zypher Blade S9",
+        "img_url": "carro2f2.png",
+        "id": 14,
+        "descripcion": "Deportivo ligero con aceleración impresionante y estética futurista."
+      },
+      {
+        "name": "Rexa ThunderSpeed",
+        "img_url": "carro2ld.png",
+        "id": 15,
+        "descripcion": "Motor turboalimentado con control de estabilidad avanzado para alto rendimiento."
+      },
+      {
+        "name": "Drakos Inferna SX",
+        "img_url": "carro.png",
+        "id": 16,
+        "descripcion": "Potencia bruta y diseño agresivo, perfecto para entusiastas del motor."
+      }
+    ]
+  },
+  {
+    "tipo": "SUV / Familiar",
+    "modelos": [
+      {
+        "name": "Comforta Journey XL",
+        "img_url": "carro2f.png",
+        "id": 17,
+        "descripcion": "SUV espacioso con tres filas de asientos y máxima seguridad para toda la familia."
+      },
+      {
+        "name": "Ventura SafeRide",
+        "img_url": "carro2f2.png",
+        "id": 18,
+        "descripcion": "Ideal para viajes largos, con sistemas de entretenimiento y gran capacidad de maletero."
+      },
+      {
+        "name": "Helios TerraSpace",
+        "img_url": "carro2ld.png",
+        "id": 19,
+        "descripcion": "Versátil y robusto, combina el confort de un sedán con la fuerza de un SUV."
+      },
+      {
+        "name": "Tavira AllRoad 500",
+        "img_url": "carro2t.png",
+        "id": 20,
+        "descripcion": "Preparado para carretera o campo, con excelente suspensión y eficiencia."
+      },
+      {
+        "name": "Magno FamilyDrive",
+        "img_url": "carro.png",
+        "id": 21,
+        "descripcion": "Diseñado pensando en la comodidad familiar, con asistencias inteligentes."
+      }
+    ]
+  },
+  {
+    "tipo": "Eléctrico",
+    "modelos": [
+      {
+        "name": "Ecolite Spark EV",
+        "img_url": "carro2f.png",
+        "id": 22,
+        "descripcion": "Compacto 100% eléctrico, perfecto para la ciudad con cero emisiones."
+      },
+      {
+        "name": "Voltaris EcoDrive",
+        "img_url": "carro2f2.png",
+        "id": 23,
+        "descripcion": "Batería de larga duración y carga rápida, con diseño moderno."
+      },
+      {
+        "name": "Electra Glide E1",
+        "img_url": "carro2ld.png",
+        "id": 24,
+        "descripcion": "Silencioso, eficiente y con buena autonomía, ideal para movilidad urbana."
+      },
+      {
+        "name": "Solaris EcoCruiser",
+        "img_url": "carro2t.png",
+        "id": 25,
+        "descripcion": "Crossover eléctrico con paneles solares auxiliares y gran espacio interior."
+      },
+      {
+        "name": "EcoMotion Voltara",
+        "img_url": "carro2.png",
+        "id": 26,
+        "descripcion": "Tecnología ecológica y diseño aerodinámico para una conducción eficiente."
+      }
+    ]
+  }
+]
