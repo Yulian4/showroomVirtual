@@ -8,7 +8,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: var(--fuenteGeneral)
+  font-family: var(--fuenteGeneral);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -165,7 +166,7 @@ video {
 
 h1 {
   font-size: 7rem;
-  line-height: 8vh;
+  line-height: 10vh;
   font-family: var(--fuenteCursiva);
 }
 
@@ -185,19 +186,48 @@ h1 {
 h2{
   color: white;
   font-family: var(--fuenteCursiva);
-  font-size: 6vh;
+  font-size: 7vh;
   text-align: center;
+  margin: 0 0 4vh 0;
 }
 .section2{
   padding: 150px;
   background-color: black;
-
 }
-.vidPromocionales{
+.catalogo{
   display: flex;
   gap: 5vh;
   margin: 0 15vh;
+  justify-content: center;
 }
-.vidProm{
-  height: 40vh;
+.contenedor-imagen{
+  position: relative;
+  margin: auto;
+  cursor: pointer;
 }
+.debajo{
+  width: 60vh;
+  height: 80vh;
+  display: block;
+}
+.encima-moto{
+  position: absolute;
+  top: 150px; /* ajusta según tu diseño */
+  left: 50px;
+  width: 40vh; 
+  height: auto;
+}
+.encima-carro{
+  width: 80vh;
+    position: absolute;
+  top: 150px; /* ajusta según tu diseño */
+ right: -80px;
+  
+  height: auto;
+}
+.encima-moto:hover, .encima-carro:hover{
+    transform: scale(1.1); 
+}
+
+
+
