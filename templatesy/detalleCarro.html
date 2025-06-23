@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo</title>
+    <!-- Asegúrate que estas rutas sean correctas según tu estructura -->
+    <link rel="stylesheet" href="../stylesy/detalles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body>
+    <div class="detalles">
+        <section id="section1" class="vistas">
+            <div class="carro-principal">
+                <h2 class="modelo" id="modelo-nombre">Cargando modelo...</h2>
+                <img id="imagen-principal" src="" alt="" class="img-carro" />
+            </div>
+        </section>
+        <section id="section2" class="vistasc">
+            <div class="vista1">
+                <img id="imagen-secundaria" src="" alt="Vista del vehículo" />
+                <div class="text">
+                    <div class="numero" id="kilometraje">--</div>
+                    <p>KM/H</p>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="vistasc">
+            <div class="vista2">
+                <img id="imagen-tres" src="" alt="Vista técnica del vehículo" class="vista-tecnica" />
+                <div class="contenido-tecnico">
+                    <h3>ESPECIFICACIONES TÉCNICAS</h3>
+                    <div id="especificaciones" class="especificaciones-grid">
+                        <div class="especificacion">
+                            <span class="titulo-espec">Motor</span>
+                            <span class="valor-espec" id="motor">Cargando...</span>
+                        </div>
+                        <div class="especificacion">
+                            <p class="titulo-espec">Descripcion</p>
+                            <p class="valor-espec" id="transmision">Cargando...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section4" class="vistasc">
+            <div class="vista3">
+                <img id="imagen-cuatro" src="" alt="Vista interior del vehículo" class="vista-interior" />
+                <div class="contenido-caracteristicas">
+                    <h3>CARACTERÍSTICAS PRINCIPALES</h3>
+                    <div id="caracteristicas" class="caracteristicas-lista">
+                        <div class="caracteristica-item">
+                            <i class="fi fi-rr-check"></i>
+                            <span>Sistema de seguridad avanzado</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <div class="puntos">
+        <a href="#section1" class="punto active" title="Vista principal"></a>
+        <a href="#section2" class="punto" title="Especificaciones"></a>
+        <a href="#section3" class="punto" title="Detalles técnicos"></a>
+        <a href="#section4" class="punto" title="Más información"></a>
+    </div>
+
+    <script src="../scripts/anidetalles.js"></script>
+    <script src="../scripts/detalles.js"></script>
+    
+</body>
+
+</html>
