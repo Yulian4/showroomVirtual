@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+:root {
+    --negro: #0d0d0d;
+    --rojo: #096ce5af;
+    --gris-claro: #ffffff;
+    --gris-oscuro: #aaaaaa;
+    --degrade: linear-gradient(to bottom, #000000, #363434, #a19a9a);
+    --fuente: 'Orbitron', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.detalles {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.vistas,.vistasc {
+    background-color: #000;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.puntos {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #999;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.punto.active,
+.punto:hover {
+  background-color: #000;
+}
+
+
+
+.carro-principal {
+    text-align: center;
+    padding: 1rem 1rem;
+    background: var(--negro);
+    background: transparent;
+    position: relative;
+    top: -90px;
+}
+
+.modelo {
+    font-family: var(--fuente);
+    font-size: 5rem;
+    color: var(--gris-claro);
+    text-shadow: 0 0 10px var(--rojo);
+    position: relative;
+    top: 220px;
+    z-index: 2;
+    margin-bottom: -10px;
+}
+
+.img-carro {
+    max-width: 90%;
+    height: auto;
+    filter: drop-shadow(0 0 20px var(--rojo));
+    transition: transform 0.3s ease;
+}
+
+.img-carro:hover {
+    transform: scale(1.03);
+}
+
+
+
+.vistasc .vista1,
+.vistasc .vista2,
+.vistasc .vista3 {
+    display: flex;
+    gap: 16vw;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+}
+
+.vista2 {
+    flex-direction: row-reverse;
+}
+
+.vistasc img {
+    width: 40vw;
+    max-width: 500vw;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
+}
+
+.vistasc img:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 0 20px var(--rojo); */
+    padding-bottom: 20px;
+}
+
+.text {
+    max-width: 500px;
+    font-size: 1.1rem;
+    color: var(--gris-claro);
+    text-align: justify;
+}
+
+.numero {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+}
+
