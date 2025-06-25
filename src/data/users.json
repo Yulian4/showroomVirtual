@@ -5,5 +5,12 @@
     "lastName": "Vargas",
     "email": "carlosvargas@gmail.com",
     "password": "$2b$05$Pi08OAzmFp/TYuVHUMnknePaEjxD/ngTlTvgtQzUIdk2FGK4t.7kW"
+  },
+  {
+    "id": "ad79a7a2-6438-4a76-a5ae-ba8bd556782b",
+    "name": "yuliana",
+    "lastName": "yate",
+    "email": "yuli@gmail.com",
+    "password": "$2b$05$WeE5SouW.g.rL9BBjtWucOJR0zDmVIxEHdlX0XTbsLUhm21rPg3e2"
   }
 ]
