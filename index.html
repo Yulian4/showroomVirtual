@@ -8,13 +8,14 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/chatbot.css">
 </head>
 
 <body>
   <header>
     <button id="btnMenu">☰ Menú</button>
     <img class="logo" src="assets/images/logo lune.png" alt="LUNE" />
-    <i class="fi fi-rr-messages"></i>
+    <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
 
 
     <nav class="sideMenu" id="sideMenu">
@@ -36,6 +37,21 @@
     </nav>
   </header>
 
+   <section id="sectionIA" class="oculto">
+            <p id="cerrarIA">X</p>
+            <h2>¿Cómo puedo ayudarte?</h2>
+          
+                <div id="chatBox">
+            <!-- se agrega desde css con classname -->
+        </div>
+        <div class="respuesta">
+            <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+            <button onclick="sendPrompt()">Enviar</button>
+            
+        </div>
+    </section>
+    
   <section class="section-ppal">
     <video src="assets/videos/videoAutoLune.mp4" autoplay muted loop></video>
     <h1>Donde la elegancia <br> toca la luna</h1>
@@ -67,6 +83,8 @@
       evolución con propósito</p>
   </section>
 
+ 
+
   <footer>
     <div class="logosFooter">
       <div class="logo">
@@ -94,11 +112,15 @@
       <button>¡Contáctanos!</button>
      </div>
  <hr>     
+
     <div class="copyright">
       <p>&copy 2025 Lune. Todos los derechos reservados <br>Sociedad de derecho Colombiano, con sede oficial en Armenia, Quindio. Inscrita en el registro mercantil colombiano con el numero 64060977</p>
     </div>
   </footer>
+
+  
 </body>
 <script src="scripts/index.js"></script>
+<script src="scripts/chatbot.js"></script>
 
 </html>

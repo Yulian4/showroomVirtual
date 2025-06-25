@@ -16,5 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+//mostrar el chatbot
 
+function mostrarChat(){
+  const seccion = document.getElementById('sectionIA')
+  seccion.classList.remove('oculto')
+  seccion.classList.add('visible')
+}
 
+// cerrar el chat bot
+function cerrarChat() {
+  const seccion = document.getElementById('sectionIA');
+  seccion.classList.remove('visible');
+  seccion.classList.add('oculto'); 
+}
+document.getElementById('cerrarIA').addEventListener('click', cerrarChat);
