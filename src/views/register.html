@@ -3,42 +3,40 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LUMNI - Crear cuenta</title>
+		<title>LUNE - Crear cuenta</title>
 
-        <link rel="stylesheet" href="/styles/form.css" />
+		<link rel="stylesheet" href="/styles/form.css" />
+		<link rel="stylesheet" href="/styles/index.css" />
 	</head>
 	<body>
-		<main>
-			<form action="/regiter" method="POST" id="registerForm">
-				<button>G</button>
-				<button>F</button>
-				<label for="name"
-					>Nombre
-					<input type="text" name="name" id="name" />
-				</label>
+		<main class="main main--bg">
+			<div class="background">
+				<form
+				action="/regiter"
+				method="POST"
+				id="registerForm"
+				class="form"
+			>
+				<!-- <button>G</button>
+				<button>F</button> -->
+				<label for="name">Nombre </label>
+				<input required type="text" name="name" id="name" />
 
-				<label for="lastName"
-					>Apellido
-					<input type="text" name="lastName" id="lastName" />
-				</label>
+				<label for="lastName">Apellido </label>
+				<input required type="text" name="lastName" id="lastName" />
 
-				<label for="email"
-					>Email
-					<input type="email" name="email" id="email" />
-				</label>
+				<label for="email">Email </label>
+				<input required type="email" name="email" id="email" />
 
-				<label for="password"
-					>Contraaseña
-					<input type="Password" name="password" id="password" />
-				</label>
-				<label for="confirmPassword"
-					>Confirmar contraseña
-					<input type="Password" name="confirmPassword" id="confirmPassword" />
-				</label>
-                <button type="submit">Crear cuenta</button>
-                <a href="/login">YA TENGO CUENTA</a>
+				<label for="password">Contraaseña </label>
+				<input required type="Password" name="password" id="password" />
+				<label for="confirmPassword">Confirmar contraseña </label>
+				<input required type="Password" name="confirmPassword" id="confirmPassword"/>
+				<button class="button" type="submit">Crear cuenta</button>
+				<a href="/login">YA TENGO CUENTA</a>
 			</form>
+			</div>
 		</main>
-        <script src="/js/form.js" defer></script>
+		<script src="/js/form.js" defer></script>
 	</body>
 </html>
