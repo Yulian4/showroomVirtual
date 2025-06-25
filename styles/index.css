@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 :root {
-  --fuenteGeneral: "Orbitron", sans-serif;
+  --fuenteGeneral: Arial, Helvetica, sans-serif
+  /* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+  /* "Orbitron", sans-serif; */;
   --fuenteCursiva: "Merriweather", serif;
 }
 
@@ -12,6 +14,8 @@
   box-sizing: border-box;
   margin: 0;
   font-family: var(--fuenteGeneral);
+  
+  
 }
 
 header {
