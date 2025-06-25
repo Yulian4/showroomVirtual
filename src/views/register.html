@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LUMNI - Crear cuenta</title>
+
+        <link rel="stylesheet" href="/styles/form.css" />
+	</head>
+	<body>
+		<main>
+			<form action="/regiter" method="POST" id="registerForm">
+				<button>G</button>
+				<button>F</button>
+				<label for="name"
+					>Nombre
+					<input type="text" name="name" id="name" />
+				</label>
+
+				<label for="lastName"
+					>Apellido
+					<input type="text" name="lastName" id="lastName" />
+				</label>
+
+				<label for="email"
+					>Email
+					<input type="email" name="email" id="email" />
+				</label>
+
+				<label for="password"
+					>Contraaseña
+					<input type="Password" name="password" id="password" />
+				</label>
+				<label for="confirmPassword"
+					>Confirmar contraseña
+					<input type="Password" name="confirmPassword" id="confirmPassword" />
+				</label>
+                <button type="submit">Crear cuenta</button>
+                <a href="/login">YA TENGO CUENTA</a>
+			</form>
+		</main>
+        <script src="/js/form.js" defer></script>
+	</body>
+</html>
