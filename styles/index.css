@@ -2,19 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 /* "Birthstone", cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+/* fuente cuadrada "Orbitron", sans-serif; */;
 
 :root {
-  --fuenteGeneral: Arial, Helvetica, sans-serif
-  /* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
-  /* "Orbitron", sans-serif; */;
   --fuenteCursiva: "Merriweather", serif;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: var(--fuenteGeneral);
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 
@@ -219,15 +216,18 @@ h1 {
   object-fit: cover;
   /* ajusta sin distorsión */
   transition: filter 0.3s ease;
+  transition: transform 0.2s ease;
 
 }
 
 .section3 img:hover {
-  filter: brightness(1.2) contrast(1.1);
+  /* filter: brightness(1.2) contrast(1.1); */
+  transform: translateY(-5px);
 }
 
 .section4 {
-  background-color: #240505;
+  background-color: #0a264b;
+  background: radial-gradient(ellipse at top left, #7e7e7e, rgb(0, 0, 0));
   color: #f0f0f0;
   text-align: center;
   padding: 100px 20px;
@@ -254,13 +254,14 @@ h1 {
 
 /*footer*/
 footer {
-  padding: 150px;
+  padding: 50px 150px;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 6vh;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .logosFooter {
@@ -280,7 +281,7 @@ footer {
   cursor: pointer;
   padding: 10px;
   font-size: 1rem;
-  background-color: #ac0513da;
+  background-color: #053facda;
   color: white;
   border-radius: 5px;
 }
