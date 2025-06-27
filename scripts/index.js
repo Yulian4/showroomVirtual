@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-})
+
 //visibilidad del boton al hacer click
  const btn = document.getElementById("btnMenu");
     const sideMenu = document.getElementById("sideMenu");
@@ -16,13 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-//mostrar el chatbot
 
-function mostrarChat(){
-  const seccion = document.getElementById('sectionIA')
-  seccion.classList.remove('oculto')
-  seccion.classList.add('visible')
-}
 
 // cerrar el chat bot
 function cerrarChat() {
@@ -31,3 +25,10 @@ function cerrarChat() {
   seccion.classList.add('oculto'); 
 }
 document.getElementById('cerrarIA').addEventListener('click', cerrarChat);
+})
+//mostrar el chatbot
+function mostrarChat(){
+  const seccion = document.getElementById('sectionIA')
+  seccion.classList.remove('oculto')
+  seccion.classList.add('visible')
+}

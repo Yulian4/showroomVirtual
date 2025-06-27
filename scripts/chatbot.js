@@ -1,6 +1,7 @@
 const historial =[];
 
 async function sendPrompt(){
+    console.log('en la funcion')
     const promptUsuarioInput = document.getElementById("promptUsuario"); // Get the input element
     const prompt = promptUsuarioInput.value; // Get the value from the input
     const chatBox = document.getElementById("chatBox");
@@ -65,7 +66,7 @@ async function sendPrompt(){
     - EcoMotion Voltara: Tecnología ecológica y diseño aerodinámico para una conducción eficiente.
 
     Próximos lanzamientos:
-    - Nuit Selene: noviembre 2025
+    - Nuit Selene: 27 de jluio de 2025
     Quienes somos:
     LUNE es una marca colombiana de autos de alta gama; vehículos que combinan lujo, diseño sofisticado y comodidad.
     Contacto:

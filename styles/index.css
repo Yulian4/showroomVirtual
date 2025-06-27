@@ -53,8 +53,8 @@ header {
   top: 12vh;
   left: -300px;
   width: 300px;
-  max-height: 60vh;
-  background: #1c1c1cb7;
+  min-height: 42vh;
+  background: #1c1c1c;
   padding: 30px;
   transition: left 0.3s ease;
   z-index: 10;
@@ -82,6 +82,11 @@ header {
 .sideMenu li:hover {
   background-color: #333333be;
 }
+.sideMenu a{
+  text-decoration: none;
+  color: inherit; /* hereda el color del <li> */
+  display: block; /* para que se comporte como caja completa */
+}
 
 /* Submenú tipo galería */
 .has-submenu:hover .submenu-galeria {
@@ -98,8 +103,8 @@ header {
   top: 12vh;
   left: 300px;
   width: 300px;
-  max-height: 60vh;
-  background: #1c1c1cb7;
+  min-height: 42vh;
+  background: #1c1c1c;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -112,7 +117,7 @@ header {
 }
 
 .submenu-galeria img {
-  max-width: 260px;
+  max-width: 200px;
   border-radius: 8px;
   transition: transform 0.3s;
 }
