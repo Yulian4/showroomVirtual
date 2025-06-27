@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
         mostrarError('No se encontró información del vehículo');
         return;
     }
-
     fetch("/src/models/dbAutos.json")
         .then(response => {
             if (!response.ok) throw new Error('Error al cargar datos');
@@ -50,21 +49,37 @@ function mostrarDetalles(vehiculo) {
     document.getElementById('imagen-cuatro').src = `/public/img/carros/${vehiculo.img_url}`;
 
     document.getElementById('especificaciones').innerHTML = `
-        <div class="categoria"><img src="/public/img/assets/velo.png" alt=""><p id="categoria"> ${vehiculo.categoria}</p></div>
-        <p><strong></strong> ${vehiculo.descripcion}</p>
+        <div class="categoria">
+            <img src="/public/img/assets/velo.png" alt="">
+            <p id="categoria">${vehiculo.categoria}</p>
+        </div>
+        <p>${vehiculo.descripcion}</p>
     `;
 
-    document.getElementById('caracteristicas').innerHTML = `
-    <div class="caracteristicas">
-     <ul>
-            <li>Motor avanzado</li>
-            <li>Sistema de seguridad</li>
-            <li>Tecnología de conectividad</li>
-        </ul>
-    </div>
-       
-    `;
+
+    const caracteristicasContenedor = document.getElementById('caracteristicas');
+    caracteristicasContenedor.innerHTML = ''; 
+
+    if (vehiculo.caracteristicas && Array.isArray(vehiculo.caracteristicas)) {
+        vehiculo.caracteristicas.forEach(caract => {
+            const item = document.createElement('div');
+            item.className = 'caracteristica-item';
+
+            const icono = document.createElement('i');
+            icono.className = caract.icono || 'fi fi-rr-check'; 
+
+            const texto = document.createElement('span');
+            texto.textContent = caract.texto;
+
+            item.appendChild(icono);
+            item.appendChild(texto);
+            caracteristicasContenedor.appendChild(item);
+        });
+    } else {
+        caracteristicasContenedor.innerHTML = '<p>No hay características disponibles.</p>';
+    }
 }
+
 
 function configurarObservadorKilometraje() {
     const seccionKilometraje = document.getElementById('section2');

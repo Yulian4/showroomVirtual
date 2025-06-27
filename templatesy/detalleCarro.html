@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Vehículo</title>
+    <!-- Asegúrate que estas rutas sean correctas según tu estructura -->
     <link rel="stylesheet" href="/public/css/yuliana.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -20,10 +21,10 @@
         </section>
         <section id="section2" class="vistasc">
             <div class="vista1">
-                <img id="imagen-secundaria" src="" alt="Vista del vehículo" />
-                <div class="text">
+                <img id="imagen-secundaria" src="" alt="Vista del vehículo" class="imagen-vehiculo" />
+                <div class="datos-kilometraje">
                     <div class="numero" id="kilometraje">--</div>
-                    <p>KM/H</p>
+                    <p class="unidad">KM/H</p>
                 </div>
             </div>
         </section>
@@ -32,14 +33,16 @@
                 <img id="imagen-tres" src="" alt="Vista técnica del vehículo" class="vista-tecnica" />
                 <div class="contenido-tecnico">
                     <h3>ESPECIFICACIONES TÉCNICAS</h3>
-                    
+
                     <div id="especificaciones" class="especificaciones-grid">
+                        
                         <div class="especificacion">
+                            
                             <span class="titulo-espec">Motor</span>
                             <span class="valor-espec" id="motor">Cargando...</span>
                         </div>
                         <div class="especificacion">
-                            
+
                             <p class="titulo-espec"></p>
                             <p class="valor-espec" id="transmision">Cargando...</p>
                         </div>
@@ -48,22 +51,27 @@
             </div>
 
         </section>
-
         <section id="section4" class="vistasc">
             <div class="vista3">
-                  <img id="imagen-cuatro" src="" alt="Vista interior del vehículo" class="vista-interior" />
+                <img id="imagen-cuatro" src="" alt="Vista interior del vehículo" class="vista-interior" />
                 <div class="contenido-caracteristicas">
                     <h3>CARACTERÍSTICAS PRINCIPALES</h3>
                     <div id="caracteristicas" class="caracteristicas-lista">
                         <div class="caracteristica-item">
-                            <i class="fi fi-rr-check"></i>
+                            <i class="fi fi-rr-shield-check"></i>
                             <span>Sistema de seguridad avanzado</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fi fi-rr-gas-pump"></i>
+                            <span>Eficiencia de combustible optimizada</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fi fi-rr-wifi"></i>
+                            <span>Conectividad inteligente</span>
                         </div>
                     </div>
                 </div>
-              
             </div>
-
         </section>
     </div>
     <div class="puntos">
