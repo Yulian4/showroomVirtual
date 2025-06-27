@@ -5,29 +5,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LUMNI - Iniciar sesion</title>
 
-        <link rel="stylesheet" href="/styles/form.css" />
+		<link rel="stylesheet" href="/styles/index.css" />
+		<link rel="stylesheet" href="/styles/form.css" />
 	</head>
 	<body>
-		<main>
-			<form action="/regiter" method="POST" id="registerForm">
-				
-				<button>G</button>
-				<button>F</button>
+		<main class="main main--bg">
+			<div class="div--img-bg-form">
+				<img
+					src="/assets/img/bg/P90243329_highRes_the-bmw-6-series-cou.jpg"
+					alt=""
+					class="img-bg-form"
+				/>
+			</div>
+			<div class="background">
 
-				<label for="email"
-					>Email
-					<input type="email" name="email" id="email" />
-				</label>
+				<section class="section section--paragraph">
+					<h2>REGISTRATE!!</h2>
+					<h3>
+						Y COMIENZA UNA AVENTURA EN CARRETERA AL LADO DE LUNE.					
+					</h3>
+					<H3>
+						SI YA TIENES CUENTA, <a href="/login" class="a a-color">INICIA SESIÓN</a>
+					</H3>
 
-				<label for="password"
-					>Contraaseña
-					<input type="Password" name="password" id="password" />
-				</label>
-				
-                <button type="submit">Iniciar sesión</button>
-				<a href="/register">CREAR CUENTA</a>
-			</form>
+				</section>
+
+				<form action="/login" method="POST" id="registerForm" class="form">
+
+					<label for="email">Email </label>
+					<input required type="email" name="email" id="email" />
+
+					<label for="password">Contraaseña </label>
+					<input required type="Password" name="password" id="password" />
+
+					<button type="submit" class="button">Iniciar sesión</button>
+
+				</form>
+			</div>
 		</main>
-        <script src="/js/form.js" defer></script>
+		<script src="/js/form.js" defer></script>
 	</body>
 </html>

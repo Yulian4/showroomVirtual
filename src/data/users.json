@@ -12,5 +12,12 @@
     "lastName": "yate",
     "email": "yuli@gmail.com",
     "password": "$2b$05$WeE5SouW.g.rL9BBjtWucOJR0zDmVIxEHdlX0XTbsLUhm21rPg3e2"
+  },
+  {
+    "id": "fae5a861-234d-41d0-9567-655934e6bc42",
+    "name": "Kevin",
+    "lastName": "Burgos",
+    "email": "burgosk@gmail.com",
+    "password": "$2b$05$3PHwPnam4LMpirs42TcL..ynROPFJzONb7fPOgNc9IzWyAoMU7RxO"
   }
 ]
