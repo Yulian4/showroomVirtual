@@ -50,16 +50,19 @@ function mostrarDetalles(vehiculo) {
     document.getElementById('imagen-cuatro').src = `/public/img/carros/${vehiculo.img_url}`;
 
     document.getElementById('especificaciones').innerHTML = `
-        <p><strong>Categoría:</strong> ${vehiculo.categoria}</p>
-        <p><strong>Descripción:</strong> ${vehiculo.descripcion}</p>
+        <div class="categoria"><img src="/public/img/assets/velo.png" alt=""><p id="categoria"> ${vehiculo.categoria}</p></div>
+        <p><strong></strong> ${vehiculo.descripcion}</p>
     `;
 
     document.getElementById('caracteristicas').innerHTML = `
-        <ul>
+    <div class="caracteristicas">
+     <ul>
             <li>Motor avanzado</li>
             <li>Sistema de seguridad</li>
             <li>Tecnología de conectividad</li>
         </ul>
+    </div>
+       
     `;
 }
 
@@ -101,7 +104,7 @@ function animarKilometraje(kilometrajeFinal) {
         }
     }
 
-    elementoNumero.textContent = '0';
+    elementoNumero.textContent = ' 0';
     requestAnimationFrame(animar);
 }
 

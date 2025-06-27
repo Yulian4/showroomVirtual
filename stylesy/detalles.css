@@ -1,57 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 :root {
     --negro: #0d0d0d;
     --rojo: #096ce5af;
     --gris-claro: #ffffff;
     --gris-oscuro: #aaaaaa;
     --degrade: linear-gradient(to bottom, #000000, #363434, #a19a9a);
-    --fuente: 'Orbitron', sans-serif;
+    --fuente: "Merriweather", serif;
+    --fuente2: 'Orbitron', sans-serif;
+    --fuente3: "exo", sans-serif;
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 .detalles {
- scroll-snap-type: y mandatory; 
-  overflow-y: scroll;
-  height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-.vistas,.vistasc {
+.vistas,
+.vistasc {
     background-color: #000;
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  justify-content: center;
-  gap: 180px;
-  align-items: center;
-  font-size: 1rem;
-  color: white;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    align-items: center;
+    font-size: 1.3rem;
+    color: white;
 }
 
 
 .puntos {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 1000;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
 }
 
 .punto {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #999;
-  transition: background-color 0.3s;
-  cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999;
+    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 /* .punto.active,
@@ -59,12 +66,12 @@ html, body {
   background-color: #000;
 } esto era antess*/
 .punto.active {
-  background-color: white;
-  transform: scale(1.3);
+    background-color: white;
+    transform: scale(1.3);
 }
 
 .punto:hover {
-  background-color: white;
+    background-color: white;
 }
 
 .carro-principal {
@@ -114,8 +121,9 @@ html, body {
 .vista2 {
     flex-direction: row-reverse;
 }
-.vistasc .vista3{
-gap: 8vw;
+
+.vistasc .vista3 {
+    gap: 8vw;
 }
 
 .vistasc img {
@@ -149,27 +157,30 @@ gap: 8vw;
 }
 
 
-.contenido-tecnico,.contenido-caracteristicas {
-    max-width: 300px;
+.contenido-tecnico,
+.contenido-caracteristicas {
+    text-align: center;
+    max-width: 500px;
     max-height: 90%;
     padding: 0px;
 }
 
 
 .contenido-tecnico h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 1.2rem;
+    font-family: var(--fuente3);
+    font-size: 3rem;
+    margin-bottom: 2vh;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 8px;
-
+    padding-bottom: 0px;
 }
-.contenido-caracteristicas h3{
-     font-family: 'Orbitron', sans-serif;
-      text-transform: uppercase;
-      font-size: 2rem;
+
+.contenido-caracteristicas h3 {
+    font-family: var(--fuente3);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 0px;
 
 }
 
@@ -186,8 +197,27 @@ gap: 8vw;
 
 .valor-espec {
     display: block;
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--fuente3);
     font-weight: 400;
     font-size: 0.9rem;
 
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contenido-caracteristicas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
 }
