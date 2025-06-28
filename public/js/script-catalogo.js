@@ -1,7 +1,7 @@
 let modelosData = [];
 
 // Cargar el JSON de modelos
-fetch("../../src/models/dbAutos.json")
+fetch("../../src/data/dbAutos.json")
     .then((response) => response.json())
     .then((data) => {
         modelosData = data;
@@ -24,7 +24,7 @@ function setupListeners() {
             ${
                 tipoObj.modelos.map((modelo) => {
                     let nombre = modelo.name || modelo;
-                    let img = modelo.img_url || "";
+                    let img = modelo.img_urls && modelo.img_urls.length > 0 ? modelo.img_urls[0] : "";
                     return `<li class="modelo-li" data-img="${img}">${nombre}</li>`;
                 }).join("")
             }
@@ -53,7 +53,7 @@ function setupListeners() {
                     <div class="img-vista-previa-contenedor">
                         <img src="${imgSrc}" alt="${nombre}" class="img-vista-previa">
                     </div>
-                    <a href="detalle.html?id=${id}" class="btn-ver-mas">Ver más información</a>
+                    <a href="detalle.html?id=${id}" class="btn-ver-mas button">Ver más información</a>
                 `;
             });
         });

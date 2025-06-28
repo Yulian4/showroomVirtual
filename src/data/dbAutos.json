@@ -1,182 +1,801 @@
 [
-  {
-    "tipo": "Sedán",
+  {"tipo": "Sedán",
     "modelos": [
       {
         "name": "Civetta NeoPulse",
-        "img_url": "Sedan-01-.png",
-        "id": 1,
-        "descripcion": "Sedán compacto de diseño moderno, ideal para la ciudad, con gran eficiencia de combustible."
+        "descripcion": "Sedán compacto de diseño moderno, ideal para la ciudad, con gran eficiencia de combustible.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Sedan-01-.png",
+          "Sedan-01--front.png",
+          "Sedan-01--side.png",
+          "Sedan-01--interior.png"
+        ]
       },
       {
         "name": "Velux MetroX",
-        "img_url": "Sedan-02-.png",
-        "id": 2,
-        "descripcion": "Confort urbano y manejo suave, perfecto para el día a día con tecnología inteligente integrada."
+        "descripcion": "Confort urbano y manejo suave, perfecto para el día a día con tecnología inteligente integrada.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Sedan-02-.png",
+          "Sedan-02--front.png",
+          "Sedan-02--side.png",
+          "Sedan-02--interior.png"
+        ]
       },
       {
         "name": "Aurelia Luxor",
-        "img_url": "Sedan-03-.png",
-        "id": 3,
-        "descripcion": "Sedán ejecutivo con interiores de lujo y asistencias avanzadas al conductor."
+        "descripcion": "Sedán ejecutivo con interiores de lujo y asistencias avanzadas al conductor.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Sedan-03-.png",
+          "Sedan-03--front.png",
+          "Sedan-03--side.png",
+          "Sedan-03--interior.png"
+        ]
       },
       {
         "name": "Stellar Glide 300",
-        "img_url": "Sedan-04-.png",
-        "id": 4,
-        "descripcion": "Equilibrio entre rendimiento y elegancia, con gran espacio interior y conectividad total."
+        "descripcion": "Equilibrio entre rendimiento y elegancia, con gran espacio interior y conectividad total.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Sedan-04-.png",
+          "Sedan-04--front.png",
+          "Sedan-04--side.png",
+          "Sedan-04--interior.png"
+        ]
       },
       {
         "name": "Orion Nova 5",
-        "img_url": "Sedan-05-.png",
-        "id": 5,
-        "descripcion": "Sedán futurista con diseño aerodinámico y sistema de seguridad de última generación."
+        "descripcion": "Sedán futurista con diseño aerodinámico y sistema de seguridad de última generación.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Sedan-05-.png",
+          "Sedan-05--front.png",
+          "Sedan-05--side.png",
+          "Sedan-05--interior.png"
+        ]
       }
     ]
   },
-  {
-    "tipo": "Todoterreno",
+  {"tipo": "Todoterreno",
     "modelos": [
       {
         "name": "Terralux Raptor 4X",
-        "img_url": "Todoterreno-Tarrelux-Raptor-4X.png",
-        "id": 6,
-        "descripcion": "Diseñado para caminos extremos, con tracción 4x4 y suspensión reforzada."
+        "descripcion": "Diseñado para caminos extremos, con tracción 4x4 y suspensión reforzada.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Todoterreno-Tarrelux-Raptor-4X.png",
+          "Todoterreno-Tarrelux-Raptor-4X-front.png",
+          "Todoterreno-Tarrelux-Raptor-4X-side.png",
+          "Todoterreno-Tarrelux-Raptor-4X-interior.png"
+        ]
       },
       {
         "name": "Gravitas TrailMaster",
-        "img_url": "Todoterreno-Gravitas-TrailMaster.png",
-        "id": 7,
-        "descripcion": "Robusto y resistente, ideal para aventuras off-road y climas difíciles."
+        "descripcion": "Robusto y resistente, ideal para aventuras off-road y climas difíciles.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Todoterreno-Gravitas-TrailMaster.png",
+          "Todoterreno-Gravitas-TrailMaster-front.png",
+          "Todoterreno-Gravitas-TrailMaster-side.png",
+          "Todoterreno-Gravitas-TrailMaster-interior.png"
+        ]
       },
       {
         "name": "Monzter TrailEdge",
-        "img_url": "Todoterreno-Monzter-TrailEdge.png",
-        "id": 8,
-        "descripcion": "Potente todoterreno con gran altura al suelo y capacidad de carga."
+        "descripcion": "Potente todoterreno con gran altura al suelo y capacidad de carga.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Todoterreno-Monzter-TrailEdge.png",
+          "Todoterreno-Monzter-TrailEdge-front.png",
+          "Todoterreno-Monzter-TrailEdge-side.png",
+          "Todoterreno-Monzter-TrailEdge-interior.png"
+        ]
       },
       {
         "name": "Rockway Titan Pro",
-        "img_url": "Todoterreno-Rockway-Titan-Pro.png",
-        "id": 9,
-        "descripcion": "Ideal para terrenos duros, con diseño imponente y motor de alto torque."
+        "descripcion": "Ideal para terrenos duros, con diseño imponente y motor de alto torque.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Todoterreno-Rockway-Titan-Pro.png",
+          "Todoterreno-Rockway-Titan-Pro-front.png",
+          "Todoterreno-Rockway-Titan-Pro-side.png",
+          "Todoterreno-Rockway-Titan-Pro-interior.png"
+        ]
       },
       {
         "name": "GravaMax Dune 800",
-        "img_url": "Todoterreno-GravaMax-Dune-800.png",
-        "id": 10,
-        "descripcion": "Conquista dunas y caminos rurales con facilidad, gracias a su motor V8."
+        "descripcion": "Conquista dunas y caminos rurales con facilidad, gracias a su motor V8.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Todoterreno-GravaMax-Dune-800.png",
+          "Todoterreno-GravaMax-Dune-800-front.png",
+          "Todoterreno-GravaMax-Dune-800-side.png",
+          "Todoterreno-GravaMax-Dune-800-interior.png"
+        ]
       },
       {
         "name": "Orion Nomad XT",
-        "img_url": "Todoterreno-Orion-Nomad-XT.png",
-        "id": 11,
-        "descripcion": "Combina estilo urbano con capacidades off-road, ideal para viajes largos."
+        "descripcion": "Combina estilo urbano con capacidades off-road, ideal para viajes largos.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Todoterreno-Orion-Nomad-XT.png",
+          "Todoterreno-Orion-Nomad-XT-front.png",
+          "Todoterreno-Orion-Nomad-XT-side.png",
+          "Todoterreno-Orion-Nomad-XT-interior.png"
+        ]
       }
     ]
   },
-  {
-    "tipo": "Deportivo",
+  {"tipo": "Deportivo",
     "modelos": [
       {
         "name": "Veltor Strike V12",
-        "img_url": "Deportivo-01-front.png",
-        "id": 12,
-        "descripcion": "Superdeportivo con motor V12, diseñado para velocidad extrema y máxima adrenalina."
+        "descripcion": "Superdeportivo con motor V12, diseñado para velocidad extrema y máxima adrenalina.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Deportivo-01-front.png",
+          "Deportivo-01-front-front.png",
+          "Deportivo-01-front-side.png",
+          "Deportivo-01-front-interior.png"
+        ]
       },
       {
         "name": "Aurelion GT Nova",
-        "img_url": "Deportivo-02-.png",
-        "id": 13,
-        "descripcion": "Diseño aerodinámico con tracción trasera, ideal para conducción en pista."
+        "descripcion": "Diseño aerodinámico con tracción trasera, ideal para conducción en pista.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Deportivo-02-.png",
+          "Deportivo-02--front.png",
+          "Deportivo-02--side.png",
+          "Deportivo-02--interior.png"
+        ]
       },
       {
         "name": "Zypher Blade S9",
-        "img_url": "Deportivo-03-.png",
-        "id": 14,
-        "descripcion": "Deportivo ligero con aceleración impresionante y estética futurista."
+        "descripcion": "Deportivo ligero con aceleración impresionante y estética futurista.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Deportivo-03-.png",
+          "Deportivo-03--front.png",
+          "Deportivo-03--side.png",
+          "Deportivo-03--interior.png"
+        ]
       },
       {
         "name": "Rexa ThunderSpeed",
-        "img_url": "Deportivo-04-.png",
-        "id": 15,
-        "descripcion": "Motor turboalimentado con control de estabilidad avanzado para alto rendimiento."
+        "descripcion": "Motor turboalimentado con control de estabilidad avanzado para alto rendimiento.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Deportivo-04-.png",
+          "Deportivo-04--front.png",
+          "Deportivo-04--side.png",
+          "Deportivo-04--interior.png"
+        ]
       },
       {
         "name": "Drakos Inferna SX",
-        "img_url": "Deportivo-05-.png",
-        "id": 16,
-        "descripcion": "Potencia bruta y diseño agresivo, perfecto para entusiastas del motor."
+        "descripcion": "Potencia bruta y diseño agresivo, perfecto para entusiastas del motor.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Gasolina",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "Deportivo-05-.png",
+          "Deportivo-05--front.png",
+          "Deportivo-05--side.png",
+          "Deportivo-05--interior.png"
+        ]
       }
     ]
   },
-  {
-    "tipo": "SUV / Familiar",
+  {"tipo": "SUV / Familiar",
     "modelos": [
       {
         "name": "Comforta Journey XL",
-        "img_url": "carro2f.png",
-        "id": 17,
-        "descripcion": "SUV espacioso con tres filas de asientos y máxima seguridad para toda la familia."
+        "descripcion": "SUV espacioso con tres filas de asientos y máxima seguridad para toda la familia.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Híbrido",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2f.png",
+          "carro2f-front.png",
+          "carro2f-side.png",
+          "carro2f-interior.png"
+        ]
       },
       {
         "name": "Ventura SafeRide",
-        "img_url": "carro2f2.png",
-        "id": 18,
-        "descripcion": "Ideal para viajes largos, con sistemas de entretenimiento y gran capacidad de maletero."
+        "descripcion": "Ideal para viajes largos, con sistemas de entretenimiento y gran capacidad de maletero.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Híbrido",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2f2.png",
+          "carro2f2-front.png",
+          "carro2f2-side.png",
+          "carro2f2-interior.png"
+        ]
       },
       {
         "name": "Helios TerraSpace",
-        "img_url": "carro2ld.png",
-        "id": 19,
-        "descripcion": "Versátil y robusto, combina el confort de un sedán con la fuerza de un SUV."
+        "descripcion": "Versátil y robusto, combina el confort de un sedán con la fuerza de un SUV.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Híbrido",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2ld.png",
+          "carro2ld-front.png",
+          "carro2ld-side.png",
+          "carro2ld-interior.png"
+        ]
       },
       {
         "name": "Tavira AllRoad 500",
-        "img_url": "carro2t.png",
-        "id": 20,
-        "descripcion": "Preparado para carretera o campo, con excelente suspensión y eficiencia."
+        "descripcion": "Preparado para carretera o campo, con excelente suspensión y eficiencia.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Híbrido",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2t.png",
+          "carro2t-front.png",
+          "carro2t-side.png",
+          "carro2t-interior.png"
+        ]
       },
       {
         "name": "Magno FamilyDrive",
-        "img_url": "carro.png",
-        "id": 21,
-        "descripcion": "Diseñado pensando en la comodidad familiar, con asistencias inteligentes."
+        "descripcion": "Diseñado pensando en la comodidad familiar, con asistencias inteligentes.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Híbrido",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro.png",
+          "carro-front.png",
+          "carro-side.png",
+          "carro-interior.png"
+        ]
       }
     ]
   },
-  {
-    "tipo": "Eléctrico",
+  {"tipo": "Eléctrico",
     "modelos": [
       {
         "name": "Ecolite Spark EV",
-        "img_url": "carro2f.png",
-        "id": 22,
-        "descripcion": "Compacto 100% eléctrico, perfecto para la ciudad con cero emisiones."
+        "descripcion": "Compacto 100% eléctrico, perfecto para la ciudad con cero emisiones.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Eléctrico",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2f.png",
+          "carro2f-front.png",
+          "carro2f-side.png",
+          "carro2f-interior.png"
+        ]
       },
       {
         "name": "Voltaris EcoDrive",
-        "img_url": "carro2f2.png",
-        "id": 23,
-        "descripcion": "Batería de larga duración y carga rápida, con diseño moderno."
+        "descripcion": "Batería de larga duración y carga rápida, con diseño moderno.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Eléctrico",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2f2.png",
+          "carro2f2-front.png",
+          "carro2f2-side.png",
+          "carro2f2-interior.png"
+        ]
       },
       {
         "name": "Electra Glide E1",
-        "img_url": "carro2ld.png",
-        "id": 24,
-        "descripcion": "Silencioso, eficiente y con buena autonomía, ideal para movilidad urbana."
+        "descripcion": "Silencioso, eficiente y con buena autonomía, ideal para movilidad urbana.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Eléctrico",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2ld.png",
+          "carro2ld-front.png",
+          "carro2ld-side.png",
+          "carro2ld-interior.png"
+        ]
       },
       {
         "name": "Solaris EcoCruiser",
-        "img_url": "carro2t.png",
-        "id": 25,
-        "descripcion": "Crossover eléctrico con paneles solares auxiliares y gran espacio interior."
+        "descripcion": "Crossover eléctrico con paneles solares auxiliares y gran espacio interior.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Eléctrico",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2t.png",
+          "carro2t-front.png",
+          "carro2t-side.png",
+          "carro2t-interior.png"
+        ]
       },
       {
         "name": "EcoMotion Voltara",
-        "img_url": "carro2.png",
-        "id": 26,
-        "descripcion": "Tecnología ecológica y diseño aerodinámico para una conducción eficiente."
+        "descripcion": "Tecnología ecológica y diseño aerodinámico para una conducción eficiente.",
+        "marca": "LUNE",
+        "modelo": "2025",
+        "motor": "Eléctrico",
+        "transmision": "Automática",
+        "capacidad_pasajeros": 5,
+        "capacidad_maletero_l": 500,
+        "kilometraje_max_km": 650,
+        "airbags": 6,
+        "frenos_abs": true,
+        "pantalla": "8 pulgadas",
+        "conectividad": [
+          "Android Auto",
+          "Apple CarPlay"
+        ],
+        "colores_disponibles": [
+          "Rojo",
+          "Blanco",
+          "Negro"
+        ],
+        "garantia_años": 5,
+        "img_urls": [
+          "carro2.png",
+          "carro2-front.png",
+          "carro2-side.png",
+          "carro2-interior.png"
+        ]
       }
     ]
   }
