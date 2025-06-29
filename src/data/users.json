@@ -19,5 +19,19 @@
     "lastName": "Burgos",
     "email": "burgosk@gmail.com",
     "password": "$2b$05$3PHwPnam4LMpirs42TcL..ynROPFJzONb7fPOgNc9IzWyAoMU7RxO"
+  },
+  {
+    "id": "5ce93cfc-1006-4686-8948-d6e380ae2653",
+    "name": "Miguel Ángel",
+    "lastName": "Vargas",
+    "email": "vargasnavarromiguelangen@gmail.com",
+    "password": "$2b$05$/6y9FTf42skCwDSGsDXE.uWB.foCc.MXvQyXPLsX.iWbl3LrNujCe"
+  },
+  {
+    "id": "76b8b23f-986b-4a75-beb7-1601daff6d45",
+    "name": "Miguel Ángel",
+    "lastName": "Vargas",
+    "email": "mvargasnavarro19@gmail.com",
+    "password": "$2b$05$rwCGdxhR5S2fPkN2QMpRguBoTV1UETCV1xqD3fzaM1PdQfd/hXaaC"
   }
 ]
