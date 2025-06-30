@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 /* "Birthstone", cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-/* fuente cuadrada "Orbitron", sans-serif; */;
+/* fuente cuadrada "Orbitron", sans-serif; */
+;
 
 :root {
   --fuenteCursiva: "Merriweather", serif;
@@ -12,7 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+
 }
 
 header {
@@ -82,10 +83,13 @@ header {
 .sideMenu li:hover {
   background-color: #333333be;
 }
-.sideMenu a{
+
+.sideMenu a {
   text-decoration: none;
-  color: inherit; /* hereda el color del <li> */
-  display: block; /* para que se comporte como caja completa */
+  color: inherit;
+  /* hereda el color del <li> */
+  display: block;
+  /* para que se comporte como caja completa */
 }
 
 /* Submenú tipo galería */

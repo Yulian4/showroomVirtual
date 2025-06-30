@@ -32,3 +32,11 @@ setInterval(() => {
     segundos.textContent = segCompleto
   
 }, 1000);
+
+const contenedores = document.querySelectorAll(".contenedor")
+let index = 0
+setInterval(() => {
+    contenedores[index].classList.remove("activo")
+    index = (index + 1)% contenedores.length
+    contenedores[index].classList.add("activo")
+}, 15000);

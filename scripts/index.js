@@ -26,6 +26,7 @@ function cerrarChat() {
 }
 document.getElementById('cerrarIA').addEventListener('click', cerrarChat);
 })
+
 //mostrar el chatbot
 function mostrarChat(){
   const seccion = document.getElementById('sectionIA')
