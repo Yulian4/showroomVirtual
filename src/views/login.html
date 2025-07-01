@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LUMNI - Iniciar sesion</title>
+		<title>LUNE - Iniciar sesion</title>
 
 		<link rel="stylesheet" href="/styles/globals.css" />
 		<link rel="stylesheet" href="/styles/form.css" />
@@ -19,25 +19,27 @@
 			</div>
 			<div class="background">
 				<section class="section section--paragraph">
-					<h2>IINICIAR SESION</h2>
-
-					<h3>
-						SI AUN NO TIENES CUENTA PUEDES
-						<a href="/register" class="a a-color">REGISTRARTE</a>
-					</h3>
+					<h1>Bienvenido de nuevo</h1>
+					<p>Ingresá para explorar autos y ponerte en contacto.</p>
+					<p>
+						¿No tenés cuenta aún?
+						<a href="/register" class="link-cta">Registrate</a>
+					</p>
 				</section>
 
-				<form action="/api/login" method="POST" id="loginForm" class="form">
+				<form
+					action="/api/login"
+					method="POST"
+					id="loginForm"
+					class="form"
+				>
 					<label for="email">E-mail</label>
 					<input required type="email" name="email" id="email" />
+					<div class="error errorEmail" id="errorEmail"></div>
 
 					<label for="password">Contraseña</label>
-					<input
-						required
-						type="password"
-						name="password"
-						id="password"
-					/>
+					<input required type="password" name="password" id="password" />
+					<div class="error errorPassword" id="errorPassword"></div>
 
 					<button type="submit" class="button">Iniciar sesión</button>
 				</form>

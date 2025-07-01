@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LUNE - Crear cuenta</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LUNE - Registrarse</title>
 
-		<link rel="stylesheet" href="/styles/globals.css" />
-		<link rel="stylesheet" href="/styles/form.css" />
-	</head>
-	<body>
-		<main class="main main--bg">
-			<div class="div--img-bg-form">
-				<img src="/assets/images/bansBgLayers/P90243329_highRes_the-bmw-6-series-cou.jpg" alt="" class="img-bg-form">
-			</div>
-			<div class="background">
+        <link rel="stylesheet" href="/styles/globals.css" />
+        <link rel="stylesheet" href="/styles/form.css" />
+    </head>
+    <body>
+        <main class="main main--bg">
+            <div class="div--img-bg-form">
+                <img
+                    src="/assets/images/bansBgLayers/P90243329_highRes_the-bmw-6-series-cou.jpg"
+                    alt=""
+                    class="img-bg-form"
+                />
+            </div>
+            <div class="background">
+                <section class="section section--paragraph">
 
-				<section class="section section--paragraph">
-					<h2>REGISTRATE!!</h2>
-					<h3>
-						Y COMIENZA UNA AVENTURA EN CARRETERA AL LADO DE LUNE.					
-					</h3>
-					<H3>
-						SI YA TIENES CUENTA, <a href="/login" class="a a-color">INICIA SESIÓN</a>
-					</H3>
+                    <h1>Empezá tu viaje con Lune</h1>
+                    <p>
+                        Creá tu cuenta para ver los autos y contactar a la
+                        empresa.
+                    </p>
+                    <p>
+                        ¿Ya tenés cuenta?
+                        <a href="/login" class="link-cta">Iniciá sesión</a>
+                    </p>
+                    
+                </section>
 
-				</section>
+                <form action="/api/register" method="POST" id="registerForm" class="form">
 
-				<form action="/api/register" method="POST" id="registerForm" class="form">
+                    <label for="name">Nombre </label>
+                    <input required type="text" name="name" id="name" />
+                    <div class="error" id="errorName"></div>
 
-					<label for="name">Nombre </label>
-					<input required type="text" name="name" id="name" />
+                    <label for="lastName">Apellido </label>
+                    <input required type="text" name="lastName" id="lastName" />
+                    <div class="error" id="errorLastName"></div>
 
-					<label for="lastName">Apellido </label>
-					<input required type="text" name="lastName" id="lastName" />
+                    <label for="email">E-mail </label>
+                    <input required type="email" name="email" id="email" />
+                    <div class="error" id="errorEmail"></div>
 
-					<label for="email">E-mail </label>
-					<input required type="email" name="email" id="email" />
+                    <label for="password">Contraseña </label>
+                    <input required type="password" name="password" id="password" />
+                    <div class="error" id="errorPassword"></div>
 
-					<label for="password">Contraaseña </label>
-					<input required type="Password" name="password" id="password" />
+                    <label for="confirmPassword">Confirmar contraseña </label>
+                    <input required type="password" name="confirmPassword" id="confirmPassword" />
+                    <div class="error" id="errorConfirmPassword"></div>
 
-					<label for="confirmPassword">Confirmar contraseña </label>
-					<input required type="Password" name="confirmPassword" id="confirmPassword"/>
+                    <button class="button" type="submit">Crear cuenta</button>
 
-					<button class="button" type="submit">Crear cuenta</button>
-
-				</form>
-			</div>
-		</main>
-		<script src="/javaScript/form.script.js" defer></script>
-	</body>
+                </form>
+            </div>
+        </main>
+        <script src="/javaScript/form.script.js" defer></script>
+    </body>
 </html>

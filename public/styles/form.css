@@ -38,10 +38,10 @@
   padding: 100px;
   display: flex;
   flex-direction: column;
-  h2{
+  h1{
     font-size: 3.5rem;
   }
-  h3{
+  p{
     font-size: 1.5rem;
   }
 }
