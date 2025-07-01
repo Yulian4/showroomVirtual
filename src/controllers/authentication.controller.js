@@ -10,9 +10,12 @@ dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 const usersPath = path.join(__dirname, "../data/users.json");
 
+/**
+ * Controlador para login de admin y asesores.
+ * Solo permite login si el usuario es admin o asesor.
+ */
 async function login(req, res) {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -32,17 +35,18 @@ async function login(req, res) {
         users = [];
     }
 
-    const valUser = users.find((user) => user.email === email);
+    // Buscar usuario por email
+    const user = users.find((u) => u.email === email);
 
-    if (!valUser) {
+    if (!user) {
         return res.status(400).json({
             status: "Error",
             errors: [{ param: "email", msg: "Usuario no encontrado" }],
         });
     }
 
-    const isPasswordValid = await bcryptjs.compare(password, valUser.password);
-
+    // Validar contraseña
+    const isPasswordValid = await bcryptjs.compare(password, user.password);
     if (!isPasswordValid) {
         return res.status(401).json({
             status: "Error",
@@ -50,12 +54,22 @@ async function login(req, res) {
         });
     }
 
+    // Solo permite login a admin o asesor
+    if (user.role !== "admin" && user.role !== "asesor") {
+        return res.status(403).json({
+            status: "Error",
+            errors: [{ param: "email", msg: "No tienes permisos para acceder" }],
+        });
+    }
+
+    // Generar token JWT
     const token = JsonWebToken.sign(
-        { email: valUser.email },
+        { email: user.email, role: user.role },
         process.env.JWT_SECRET,
         { expiresIn: process.env.TOKEN_EXPIRATION }
     );
 
+    // Opciones de cookie
     const cookieOptions = {
         expiresIn: new Date(
             Date.now() + process.env.JWT_COOKIE_EXPIRATION * 24 * 60 * 60 * 1000
@@ -65,79 +79,8 @@ async function login(req, res) {
 
     res.cookie("jwt", token, cookieOptions);
 
-    return res.status(200).json({
-        status: "OK",
-        message: "Login exitoso",
-        redirect: "/",
-    });
+    // Redirige según el rol
+   return res.redirect(user.role === "admin" ? "/admin" : "/asesor");
 }
 
-async function register(req, res) {
-    try {
-        const { name, lastName, email, password, confirmPassword } = req.body;
-
-        // Validaciones de express-validator
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({
-                status: "Error",
-                errors: errors.array()
-            });
-        }
-
-        if (password !== confirmPassword) {
-            return res.status(400).json({
-                status: "Error",
-                errors: [
-                    { param: "confirmPassword", msg: "Las contraseñas no coinciden" }
-                ]
-            });
-        }
-
-        // Leer json de usuarios
-        let users = [];
-        try {
-            users = JSON.parse(fs.readFileSync(usersPath, "utf-8"));
-        } catch (e) {
-            users = [];
-        }
-
-        const valUserExis = users.find((user) => user.email === email);
-
-        if (valUserExis) {
-            return res.status(400).json({
-                status: "Error",
-                errors: [{ param: "email", msg: "Este usuario ya existe" }],
-            });
-        }
-
-        const salt = await bcryptjs.genSalt(5);
-        const hashPassword = await bcryptjs.hash(password, salt);
-
-        const newUser = {
-            id: uuidv4(),
-            name,
-            lastName,
-            email,
-            password: hashPassword,
-        };
-
-        users.push(newUser);
-        fs.writeFileSync(usersPath, JSON.stringify(users, null, 2), "utf-8");
-
-        return res.status(200).json({
-            status: "OK",
-            message: "Usuario registrado correctamente",
-            redirect: "/login"
-        });
-
-    } catch (e) {
-        console.error("Error al registrar el usuario:", e);
-        return res.status(500).json({
-            status: "Error",
-            message: "Error interno del servidor"
-        });
-    }
-}
-
-export const methods = { login, register };
+export const methods = { login };

@@ -1,36 +1,33 @@
 import { Router } from "express";
+import { methods as authentication } from "../controllers/authentication.controller.js";
+import { renderAdmin, getAsesores, registerAsesor } from "../controllers/admin.controller.js";
+import { isAuthenticated, isAdmin } from "../middleware/auth.middleware.js";
 import path from "path";
 import { fileURLToPath } from "url";
-import { methods as authentication } from "../controllers/authentication.controller.js";
-import { validation } from "../middleware/auth.middleware.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const router = Router();
 
-// API Auth
-router.post("/register", validation.register, authentication.register);
-router.post("/login", validation.login, authentication.login);
-
-// Vistas
-router.get("/", (req, res) => {  
+router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../views/index.html"));
 });
-router.get("/catalog", (req, res) => {  
-    res.sendFile(path.join(__dirname, "../views/catalogo-carros.html"));
-});
-router.get("/register", (req, res) => {  
-    res.sendFile(path.join(__dirname, "../views/register.html"));
-});
-router.get("/login", (req, res) => {  
+
+// Login (admin y asesores)
+router.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "../views/login.html"));
 });
+router.post("/login", authentication.login);
 
-// Datos JSON
-router.get("/data/cars.json", (req, res) => {
-    res.sendFile(path.join(__dirname, "../data/cars.json"));
+// Vista de admin (solo admin)
+router.get("/admin", isAuthenticated, isAdmin, renderAdmin);
+
+// API para obtener asesores (solo admin)
+router.get("/api/asesores", isAuthenticated, isAdmin, getAsesores);
+
+// Registrar asesor (solo admin)
+router.get("/register-asesor", isAuthenticated, isAdmin, (req, res) => {
+    res.sendFile(path.join(__dirname, "../views/register-asesor.html"));
 });
-router.get("/data/users.json", (req, res) => {
-    res.sendFile(path.join(__dirname, "../data/users.json"));
-});
+router.post("/register-asesor", isAuthenticated, isAdmin, registerAsesor);
 
 export default router;
