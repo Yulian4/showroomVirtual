@@ -1,802 +1,1403 @@
 [
-  {"tipo": "Sedán",
-    "modelos": [
-      {
-        "name": "Civetta NeoPulse",
-        "descripcion": "Sedán compacto de diseño moderno, ideal para la ciudad, con gran eficiencia de combustible.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
+	{
+		"tipo": "Sedán",
+
+		"modelos": [
+			{
+				"name": "Civetta NeoPulse",
+				"id": 1,
+				"kilometraje": 200,
+				"descripcion": "Sedán compacto de diseño moderno, ideal para la ciudad, con gran eficiencia de combustible.",
+				"img_urls": [
+					"Sedan-01-.png",
+					"Sedan-01--front.png",
+					"Sedan-01--side.png",
+					"Sedan-01--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad avanzado con 6 airbags y frenos ABS",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Eficiencia de combustible optimizada para ciudad",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con Android Auto y Apple CarPlay",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 1.5L turbo, optimizado para consumo eficiente y respuesta rápida."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "Entrega de 180 caballos de fuerza, ideal para una conducción ágil en ciudad."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "Torque máximo de 250 Nm disponible desde bajas revoluciones para mejor aceleración."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de disco ventilados con ABS y distribución electrónica de frenado."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente en las cuatro ruedas para mayor confort y estabilidad."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla táctil de 8 pulgadas compatible con Android Auto y Apple CarPlay."
+					}
+				]
+			},
+			{
+				"name": "Velux MetroX",
+				"id": 2,
+				"kilometraje": 200,
+				"descripcion": "Confort urbano y manejo suave, perfecto para el día a día con tecnología inteligente integrada.",
+				"img_urls": [
+					"Sedan-02-.png",
+					"Sedan-02--front.png",
+					"Sedan-02--side.png",
+					"Sedan-02--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "6 airbags y sistema de frenado avanzado con ABS",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Alta eficiencia de combustible para uso urbano",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Sistema de conectividad con Android Auto y Apple CarPlay",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 1.5L con transmisión automática, suave y eficiente."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "170 caballos de fuerza para un manejo ágil en ciudad."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "240 Nm de torque para excelente respuesta en aceleración."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco en las cuatro ruedas con sistema ABS."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para mayor confort en caminos urbanos."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 8 pulgadas con sistema multimedia avanzado."
+					}
+				]
+			},
+			{
+				"name": "Aurelia Luxor",
+				"id": 3,
+				"kilometraje": 200,
+				"descripcion": "Sedán ejecutivo con interiores de lujo y asistencias avanzadas al conductor.",
+				"img_urls": [
+					"Sedan-03-.png",
+					"Sedan-03--front.png",
+					"Sedan-03--side.png",
+					"Sedan-03--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad premium con 6 airbags y controles avanzados",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Balance perfecto entre potencia y eficiencia de combustible",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad de lujo con integración completa de smartphones",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 2.0L turbo para un rendimiento ejecutivo."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "220 caballos de fuerza para un manejo potente y refinado."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "320 Nm de torque para aceleración suave y poderosa."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de alto rendimiento con ABS avanzado."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión adaptativa para máxima comodidad en todo terreno."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla táctil de 10 pulgadas con sistema de navegación premium."
+					}
+				]
+			},
+			{
+				"name": "Stellar Glide 300",
+				"id": 4,
+				"kilometraje": 200,
+				"descripcion": "Equilibrio entre rendimiento y elegancia, con gran espacio interior y conectividad total.",
         "img_urls": [
-          "Sedan-01-.png",
-          "Sedan-01--front.png",
-          "Sedan-01--side.png",
-          "Sedan-01--interior.png"
-        ]
-      },
-      {
-        "name": "Velux MetroX",
-        "descripcion": "Confort urbano y manejo suave, perfecto para el día a día con tecnología inteligente integrada.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
+          "Sedan-04-.png"
         ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Sedan-02-.png",
-          "Sedan-02--front.png",
-          "Sedan-02--side.png",
-          "Sedan-02--interior.png"
-        ]
-      },
-      {
-        "name": "Aurelia Luxor",
-        "descripcion": "Sedán ejecutivo con interiores de lujo y asistencias avanzadas al conductor.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Sedan-03-.png",
-          "Sedan-03--front.png",
-          "Sedan-03--side.png",
-          "Sedan-03--interior.png"
-        ]
-      },
-      {
-        "name": "Stellar Glide 300",
-        "descripcion": "Equilibrio entre rendimiento y elegancia, con gran espacio interior y conectividad total.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Sedan-04-.png",
-          "Sedan-04--front.png",
-          "Sedan-04--side.png",
-          "Sedan-04--interior.png"
-        ]
-      },
-      {
-        "name": "Orion Nova 5",
-        "descripcion": "Sedán futurista con diseño aerodinámico y sistema de seguridad de última generación.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Sedan-05-.png",
-          "Sedan-05--front.png",
-          "Sedan-05--side.png",
-          "Sedan-05--interior.png"
-        ]
-      }
-    ]
-  },
-  {"tipo": "Todoterreno",
-    "modelos": [
-      {
-        "name": "Terralux Raptor 4X",
-        "descripcion": "Diseñado para caminos extremos, con tracción 4x4 y suspensión reforzada.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Todoterreno-Tarrelux-Raptor-4X.png",
-          "Todoterreno-Tarrelux-Raptor-4X-front.png",
-          "Todoterreno-Tarrelux-Raptor-4X-side.png",
-          "Todoterreno-Tarrelux-Raptor-4X-interior.png"
-        ]
-      },
-      {
-        "name": "Gravitas TrailMaster",
-        "descripcion": "Robusto y resistente, ideal para aventuras off-road y climas difíciles.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Todoterreno-Gravitas-TrailMaster.png",
-          "Todoterreno-Gravitas-TrailMaster-front.png",
-          "Todoterreno-Gravitas-TrailMaster-side.png",
-          "Todoterreno-Gravitas-TrailMaster-interior.png"
-        ]
-      },
-      {
-        "name": "Monzter TrailEdge",
-        "descripcion": "Potente todoterreno con gran altura al suelo y capacidad de carga.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Todoterreno-Monzter-TrailEdge.png",
-          "Todoterreno-Monzter-TrailEdge-front.png",
-          "Todoterreno-Monzter-TrailEdge-side.png",
-          "Todoterreno-Monzter-TrailEdge-interior.png"
-        ]
-      },
-      {
-        "name": "Rockway Titan Pro",
-        "descripcion": "Ideal para terrenos duros, con diseño imponente y motor de alto torque.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Todoterreno-Rockway-Titan-Pro.png",
-          "Todoterreno-Rockway-Titan-Pro-front.png",
-          "Todoterreno-Rockway-Titan-Pro-side.png",
-          "Todoterreno-Rockway-Titan-Pro-interior.png"
-        ]
-      },
-      {
-        "name": "GravaMax Dune 800",
-        "descripcion": "Conquista dunas y caminos rurales con facilidad, gracias a su motor V8.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Todoterreno-GravaMax-Dune-800.png",
-          "Todoterreno-GravaMax-Dune-800-front.png",
-          "Todoterreno-GravaMax-Dune-800-side.png",
-          "Todoterreno-GravaMax-Dune-800-interior.png"
-        ]
-      },
-      {
-        "name": "Orion Nomad XT",
-        "descripcion": "Combina estilo urbano con capacidades off-road, ideal para viajes largos.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Todoterreno-Orion-Nomad-XT.png",
-          "Todoterreno-Orion-Nomad-XT-front.png",
-          "Todoterreno-Orion-Nomad-XT-side.png",
-          "Todoterreno-Orion-Nomad-XT-interior.png"
-        ]
-      }
-    ]
-  },
-  {"tipo": "Deportivo",
-    "modelos": [
-      {
-        "name": "Veltor Strike V12",
-        "descripcion": "Superdeportivo con motor V12, diseñado para velocidad extrema y máxima adrenalina.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Deportivo-01-front.png",
-          "Deportivo-01-front-front.png",
-          "Deportivo-01-front-side.png",
-          "Deportivo-01-front-interior.png"
-        ]
-      },
-      {
-        "name": "Aurelion GT Nova",
-        "descripcion": "Diseño aerodinámico con tracción trasera, ideal para conducción en pista.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Deportivo-02-.png",
-          "Deportivo-02--front.png",
-          "Deportivo-02--side.png",
-          "Deportivo-02--interior.png"
-        ]
-      },
-      {
-        "name": "Zypher Blade S9",
-        "descripcion": "Deportivo ligero con aceleración impresionante y estética futurista.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Deportivo-03-.png",
-          "Deportivo-03--front.png",
-          "Deportivo-03--side.png",
-          "Deportivo-03--interior.png"
-        ]
-      },
-      {
-        "name": "Rexa ThunderSpeed",
-        "descripcion": "Motor turboalimentado con control de estabilidad avanzado para alto rendimiento.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Deportivo-04-.png",
-          "Deportivo-04--front.png",
-          "Deportivo-04--side.png",
-          "Deportivo-04--interior.png"
-        ]
-      },
-      {
-        "name": "Drakos Inferna SX",
-        "descripcion": "Potencia bruta y diseño agresivo, perfecto para entusiastas del motor.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Gasolina",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "Deportivo-05-.png",
-          "Deportivo-05--front.png",
-          "Deportivo-05--side.png",
-          "Deportivo-05--interior.png"
-        ]
-      }
-    ]
-  },
-  {"tipo": "SUV / Familiar",
-    "modelos": [
-      {
-        "name": "Comforta Journey XL",
-        "descripcion": "SUV espacioso con tres filas de asientos y máxima seguridad para toda la familia.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Híbrido",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2f.png",
-          "carro2f-front.png",
-          "carro2f-side.png",
-          "carro2f-interior.png"
-        ]
-      },
-      {
-        "name": "Ventura SafeRide",
-        "descripcion": "Ideal para viajes largos, con sistemas de entretenimiento y gran capacidad de maletero.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Híbrido",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2f2.png",
-          "carro2f2-front.png",
-          "carro2f2-side.png",
-          "carro2f2-interior.png"
-        ]
-      },
-      {
-        "name": "Helios TerraSpace",
-        "descripcion": "Versátil y robusto, combina el confort de un sedán con la fuerza de un SUV.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Híbrido",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2ld.png",
-          "carro2ld-front.png",
-          "carro2ld-side.png",
-          "carro2ld-interior.png"
-        ]
-      },
-      {
-        "name": "Tavira AllRoad 500",
-        "descripcion": "Preparado para carretera o campo, con excelente suspensión y eficiencia.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Híbrido",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2t.png",
-          "carro2t-front.png",
-          "carro2t-side.png",
-          "carro2t-interior.png"
-        ]
-      },
-      {
-        "name": "Magno FamilyDrive",
-        "descripcion": "Diseñado pensando en la comodidad familiar, con asistencias inteligentes.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Híbrido",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro.png",
-          "carro-front.png",
-          "carro-side.png",
-          "carro-interior.png"
-        ]
-      }
-    ]
-  },
-  {"tipo": "Eléctrico",
-    "modelos": [
-      {
-        "name": "Ecolite Spark EV",
-        "descripcion": "Compacto 100% eléctrico, perfecto para la ciudad con cero emisiones.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Eléctrico",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2f.png",
-          "carro2f-front.png",
-          "carro2f-side.png",
-          "carro2f-interior.png"
-        ]
-      },
-      {
-        "name": "Voltaris EcoDrive",
-        "descripcion": "Batería de larga duración y carga rápida, con diseño moderno.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Eléctrico",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2f2.png",
-          "carro2f2-front.png",
-          "carro2f2-side.png",
-          "carro2f2-interior.png"
-        ]
-      },
-      {
-        "name": "Electra Glide E1",
-        "descripcion": "Silencioso, eficiente y con buena autonomía, ideal para movilidad urbana.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Eléctrico",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2ld.png",
-          "carro2ld-front.png",
-          "carro2ld-side.png",
-          "carro2ld-interior.png"
-        ]
-      },
-      {
-        "name": "Solaris EcoCruiser",
-        "descripcion": "Crossover eléctrico con paneles solares auxiliares y gran espacio interior.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Eléctrico",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2t.png",
-          "carro2t-front.png",
-          "carro2t-side.png",
-          "carro2t-interior.png"
-        ]
-      },
-      {
-        "name": "EcoMotion Voltara",
-        "descripcion": "Tecnología ecológica y diseño aerodinámico para una conducción eficiente.",
-        "marca": "LUNE",
-        "modelo": "2025",
-        "motor": "Eléctrico",
-        "transmision": "Automática",
-        "capacidad_pasajeros": 5,
-        "capacidad_maletero_l": 500,
-        "kilometraje_max_km": 650,
-        "airbags": 6,
-        "frenos_abs": true,
-        "pantalla": "8 pulgadas",
-        "conectividad": [
-          "Android Auto",
-          "Apple CarPlay"
-        ],
-        "colores_disponibles": [
-          "Rojo",
-          "Blanco",
-          "Negro"
-        ],
-        "garantia_años": 5,
-        "img_urls": [
-          "carro2.png",
-          "carro2-front.png",
-          "carro2-side.png",
-          "carro2-interior.png"
-        ]
-      }
-    ]
-  }
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Protección avanzada con 6 airbags y sistemas de asistencia al conductor",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de eficiencia de combustible para viajes largos",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Sistema de conectividad completo con integración de dispositivos",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 1.8L turbo para equilibrio perfecto entre potencia y eficiencia."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "200 caballos de fuerza para un rendimiento equilibrado."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "280 Nm de torque para respuesta inmediata en carretera."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco ventilados con sistema de asistencia electrónica."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión multilink para confort y estabilidad superiores."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Sistema multimedia avanzado con pantalla de 9 pulgadas y navegación."
+					}
+				]
+			},
+			{
+				"name": "Orion Nova 5",
+				"id": 5,
+				"kilometraje": 200,
+				"descripcion": "Sedán futurista con diseño aerodinámico y sistema de seguridad de última generación.",
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Tecnología de seguridad de última generación con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Aerodinámica optimizada para máxima eficiencia de combustible",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Sistema de conectividad futurista con integración total",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 2.0L turbo con tecnología híbrida ligera."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "250 caballos de fuerza para un rendimiento excepcional."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "350 Nm de torque para aceleración potente y suave."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de alto rendimiento con asistencia predictiva."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión activa adaptativa para máxima comodidad y control."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla digital de 12 pulgadas con realidad aumentada y controles por voz."
+					}
+				],
+				"img_urls": [
+					"Sedan-05-.png",
+					"Sedan-05--front.png",
+					"Sedan-05--side.png",
+					"Sedan-05--interior.png"
+				]
+			}
+		]
+	},
+	{
+		"tipo": "Todoterreno",
+		"modelos": [
+			{
+				"name": "Terralux Raptor 4X",
+				"id": 6,
+				"kilometraje": 350,
+				"descripcion": "Diseñado para caminos extremos, con tracción 4x4 y suspensión reforzada.",
+				"img_urls": [
+					"Todoterreno-Tarrelux-Raptor-4X.png",
+					"Todoterreno-Tarrelux-Raptor-4X-front.png",
+					"Todoterreno-Tarrelux-Raptor-4X-side.png",
+					"Todoterreno-Tarrelux-Raptor-4X-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad off-road con 6 airbags y protección reforzada",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de gestión de combustible para terrenos difíciles",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente incluso en zonas remotas",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 3.5L V6 con tracción 4x4 permanente."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "310 caballos de fuerza para conquistar cualquier terreno."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "400 Nm de torque para superar obstáculos con facilidad."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco grandes ventilados para condiciones extremas."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente de largo recorrido para off-road."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Sistema off-road con múltiples modos de conducción y cámara 360°."
+					}
+				]
+			},
+			{
+				"name": "Gravitas TrailMaster",
+				"id": 7,
+				"kilometraje": 350,
+				"descripcion": "Robusto y resistente, ideal para aventuras off-road y climas difíciles.",
+				"img_urls": [
+					"Todoterreno-Gravitas-TrailMaster.png",
+					"Todoterreno-Gravitas-TrailMaster-front.png",
+					"Todoterreno-Gravitas-TrailMaster-side.png",
+					"Todoterreno-Gravitas-TrailMaster-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Chasis reforzado y 6 airbags para máxima protección off-road",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Sistema de gestión de combustible optimizado para aventuras",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad satelital para zonas sin cobertura",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 4.0L V8 con transmisión automática robusta."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "350 caballos de fuerza para los terrenos más exigentes."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "450 Nm de torque para remolque y escalada de pendientes."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco grandes con sistema de frenado en descensos."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión de ballestas reforzada para carga pesada."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla off-road de 9 pulgadas con telemetría y navegación todoterreno."
+					}
+				]
+			},
+			{
+				"name": "Monzter TrailEdge",
+				"id": 8,
+				"kilometraje": 350,
+				"descripcion": "Potente todoterreno con gran altura al suelo y capacidad de carga.",
+				"img_urls": [
+					"Todoterreno-Monzter-TrailEdge.png",
+					"Todoterreno-Monzter-TrailEdge-front.png",
+					"Todoterreno-Monzter-TrailEdge-side.png",
+					"Todoterreno-Monzter-TrailEdge-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Protección avanzada con chasis reforzado y 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de eficiencia para viajes largos off-road",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Sistema de conectividad con antena reforzada para zonas remotas",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 3.0L turbo diesel con gran torque."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "280 caballos de fuerza para terrenos extremos."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "500 Nm de torque a bajas revoluciones para máximo control."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco grandes con sistema de asistencia en pendientes."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión de aire adaptable para diferentes cargas y terrenos."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Sistema de conducción off-road con múltiples modos y cámaras de visión."
+					}
+				]
+			},
+			{
+				"name": "Rockway Titan Pro",
+				"id": 9,
+				"kilometraje": 350,
+				"descripcion": "Ideal para terrenos duros, con diseño imponente y motor de alto torque.",
+				"img_urls": [
+					"Todoterreno-Rockway-Titan-Pro.png",
+					"Todoterreno-Rockway-Titan-Pro-front.png",
+					"Todoterreno-Rockway-Titan-Pro-side.png",
+					"Todoterreno-Rockway-Titan-Pro-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Estructura de protección reforzada con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Sistema de gestión de combustible para condiciones extremas",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad avanzada con sistema de emergencia satelital",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 3.8L V6 con turbo para alto rendimiento."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "320 caballos de fuerza para los terrenos más desafiantes."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "420 Nm de torque para superar obstáculos con facilidad."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de alto rendimiento para cargas pesadas."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión reforzada con amortiguadores de largo recorrido."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con sistema off-road y navegación especializada."
+					}
+				]
+			},
+			{
+				"name": "GravaMax Dune 800",
+				"id": 10,
+				"kilometraje": 350,
+				"descripcion": "Conquista dunas y caminos rurales con facilidad, gracias a su motor V8.",
+				"img_urls": [
+					"Todoterreno-GravaMax-Dune-800.png",
+					"Todoterreno-GravaMax-Dune-800-front.png",
+					"Todoterreno-GravaMax-Dune-800-side.png",
+					"Todoterreno-GravaMax-Dune-800-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad especial para arena con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de gestión de combustible para arena y terrenos sueltos",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con GPS especial para desierto",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 5.7L V8 con sistema de admisión especial para arena."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "400 caballos de fuerza para dominar dunas y terrenos sueltos."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "550 Nm de torque para máxima tracción en arena."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco reforzados con sistema de enfriamiento."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión de alto recorrido especial para dunas."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Sistema de navegación desértica y pantalla de 10 pulgadas resistente."
+					}
+				]
+			},
+			{
+				"name": "Orion Nomad XT",
+				"id": 11,
+				"kilometraje": 350,
+				"descripcion": "Combina estilo urbano con capacidades off-road, ideal para viajes largos.",
+				"img_urls": [
+					"Todoterreno-Orion-Nomad-XT.png",
+					"Todoterreno-Orion-Nomad-XT-front.png",
+					"Todoterreno-Orion-Nomad-XT-side.png",
+					"Todoterreno-Orion-Nomad-XT-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad versátil con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Balance perfecto entre rendimiento y eficiencia",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente para aventureros urbanos",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 3.0L V6 con doble turbo para versatilidad."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "300 caballos de fuerza para ciudad y carretera."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "400 Nm de torque para capacidad off-road cuando se necesita."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de alto rendimiento para todo uso."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión adaptable para ciudad y terrenos irregulares."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con sistema de navegación aventurero."
+					}
+				]
+			}
+		]
+	},
+	{
+		"tipo": "Deportivo",
+		"modelos": [
+			{
+				"name": "Veltor Strike V12",
+				"id": 12,
+				"kilometraje": 150,
+				"descripcion": "Superdeportivo con motor V12, diseñado para velocidad extrema y máxima adrenalina.",
+				"img_urls": [
+					"Deportivo-01-front.png",
+					"Deportivo-01-front-front.png",
+					"Deportivo-01-front-side.png",
+					"Deportivo-01-front-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad de alto rendimiento con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de gestión de combustible para alto rendimiento",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente para entusiastas del rendimiento",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 6.5L V12 con tecnología de F1."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "800 caballos de fuerza para velocidad extrema."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "720 Nm de torque para aceleración brutal."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de carbono-cerámicos con sistema de enfriamiento activo."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión activa con ajuste en tiempo real para pista."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Sistema de telemetría de carrera y pantalla digital de 12 pulgadas."
+					}
+				]
+			},
+			{
+				"name": "Aurelion GT Nova",
+				"id": 13,
+				"kilometraje": 150,
+				"descripcion": "Diseño aerodinámico con tracción trasera, ideal para conducción en pista.",
+				"img_urls": [
+					"Deportivo-02-.png",
+					"Deportivo-02--front.png",
+					"Deportivo-02--side.png",
+					"Deportivo-02--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad deportivo con control de estabilidad avanzado",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de eficiencia dinámica para deportivos",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con modo pista integrado",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 4.0L V8 biturbo con sonido deportivo."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "600 caballos de fuerza para aceleración impresionante."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "650 Nm de torque para salidas explosivas."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco perforados con pinzas de 6 pistones."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión deportiva ajustable con modo pista."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de conducción digital de 12 pulgadas con telemetría."
+					}
+				]
+			},
+			{
+				"name": "Zypher Blade S9",
+				"id": 14,
+				"kilometraje": 150,
+				"descripcion": "Deportivo ligero con aceleración impresionante y estética futurista.",
+				"img_urls": [
+					"Deportivo-03-.png",
+					"Deportivo-03--front.png",
+					"Deportivo-03--side.png",
+					"Deportivo-03--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad ligero pero robusto con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Eficiencia aerodinámica para máximo rendimiento",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con interfaz minimalista",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 3.0L V6 turbo con tecnología híbrida ligera."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "450 caballos de fuerza en un chasis ultraligero."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "500 Nm de torque para aceleración instantánea."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de carbono-cerámicos para máxima eficiencia."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión deportiva con ajuste magnético."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla digital de 10 pulgadas con sistema de rendimiento."
+					}
+				]
+			},
+			{
+				"name": "Rexa ThunderSpeed",
+				"id": 15,
+				"kilometraje": 150,
+				"descripcion": "Motor turboalimentado con control de estabilidad avanzado para alto rendimiento.",
+				"img_urls": [
+					"Deportivo-04-.png",
+					"Deportivo-04--front.png",
+					"Deportivo-04--side.png",
+					"Deportivo-04--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Control de estabilidad avanzado y 6 airbags para seguridad dinámica",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Sistema de gestión de combustible para alto rendimiento",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con modo carrera integrado",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 5.2L V10 atmosférico con sonido electrizante."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "550 caballos de fuerza para emociones fuertes."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "540 Nm de torque a altas revoluciones."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco perforados con sistema de refrigeración."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión deportiva de doble horquilla para precisión."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Sistema de telemetría avanzado y pantalla de 12 pulgadas."
+					}
+				]
+			},
+			{
+				"name": "Drakos Inferna SX",
+				"id": 16,
+				"kilometraje": 150,
+				"descripcion": "Potencia bruta y diseño agresivo, perfecto para entusiastas del motor.",
+				"img_urls": [
+					"Deportivo-05-.png",
+					"Deportivo-05--front.png",
+					"Deportivo-05--side.png",
+					"Deportivo-05--interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad deportivo con controles avanzados",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología de gestión de potencia para máximo rendimiento",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con interfaz agresiva",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor de gasolina 6.2L V8 supercargado para potencia extrema."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "700 caballos de fuerza para aceleración demoledora."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "800 Nm de torque para empuje brutal en cualquier marcha."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de carbono-cerámicos con pinzas de 8 pistones."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión deportiva ajustable electrónicamente."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla digital de 12 pulgadas con sistema de rendimiento extremo."
+					}
+				]
+			}
+		]
+	},
+	{
+		"tipo": "SUV / Familiar",
+		"modelos": [
+			{
+				"name": "Comforta Journey XL",
+				"id": 17,
+				"kilometraje": 300,
+				"descripcion": "SUV espacioso con tres filas de asientos y máxima seguridad para toda la familia.",
+				"img_urls": [
+					"carro2f.png",
+					"carro2f-front.png",
+					"carro2f-side.png",
+					"carro2f-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad familiar con 6 airbags y controles avanzados",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología híbrida para máxima eficiencia en familia",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con entretenimiento para todos",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor híbrido 2.5L de 4 cilindros con transmisión automática suave."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "200 caballos de fuerza combinados para viajes familiares."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "250 Nm de torque para un manejo relajado y eficiente."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de disco con asistencia electrónica."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para máximo confort familiar."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con sistema de entretenimiento trasero."
+					}
+				]
+			},
+			{
+				"name": "Ventura SafeRide",
+				"id": 18,
+				"kilometraje": 300,
+				"descripcion": "Ideal para viajes largos, con sistemas de entretenimiento y gran capacidad de maletero.",
+				"img_urls": [
+					"carro2f2.png",
+					"carro2f2-front.png",
+					"carro2f2-side.png",
+					"carro2f2-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad avanzado con 6 airbags para viajes largos",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología híbrida para máxima autonomía en carretera",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con WiFi integrado",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor híbrido 2.0L de 4 cilindros con transmisión automática."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "180 caballos de fuerza combinados para viajes eficientes."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "220 Nm de torque para un manejo relajado."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de disco con asistencia para cargas pesadas."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión adaptable para diferentes condiciones de carga."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con navegación y entretenimiento."
+					}
+				]
+			},
+			{
+				"name": "Helios TerraSpace",
+				"id": 19,
+				"kilometraje": 300,
+				"descripcion": "Versátil y robusto, combina el confort de un sedán con la fuerza de un SUV.",
+				"img_urls": [
+					"carro2ld.png",
+					"carro2ld-front.png",
+					"carro2ld-side.png",
+					"carro2ld-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad versátil con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología híbrida para uso urbano y carretera",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con múltiples opciones",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor híbrido 2.4L de 4 cilindros con transmisión automática."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "220 caballos de fuerza combinados para versatilidad."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "270 Nm de torque para diferentes condiciones."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de disco con asistencia electrónica."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para confort y capacidad."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 9 pulgadas con sistema de conectividad total."
+					}
+				]
+			},
+			{
+				"name": "Tavira AllRoad 500",
+				"id": 20,
+				"kilometraje": 300,
+				"descripcion": "Preparado para carretera o campo, con excelente suspensión y eficiencia.",
+				"img_urls": [
+					"carro2t.png",
+					"carro2t-front.png",
+					"carro2t-side.png",
+					"carro2t-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad todo terreno con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología híbrida para ciudad y campo",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con GPS avanzado",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor híbrido 2.0L turbo de 4 cilindros para versatilidad."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "250 caballos de fuerza combinados para todo uso."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "320 Nm de torque para capacidad ligera off-road."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos de disco ventilados para diferentes condiciones."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión elevada con amortiguadores reforzados."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con sistema de navegación todo terreno."
+					}
+				]
+			},
+			{
+				"name": "Magno FamilyDrive",
+				"id": 21,
+				"kilometraje": 300,
+				"descripcion": "Diseñado pensando en la comodidad familiar, con asistencias inteligentes.",
+				"img_urls": [
+					"carro.png",
+					"carro-front.png",
+					"carro-side.png",
+					"carro-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad familiar avanzado con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología híbrida para máxima eficiencia familiar",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con controles familiares",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor híbrido 2.5L de 4 cilindros con transmisión automática."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "190 caballos de fuerza combinados para viajes familiares."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "240 Nm de torque para un manejo suave y seguro."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos de disco con asistencia electrónica."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para máximo confort familiar."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con sistema de entretenimiento familiar."
+					}
+				]
+			}
+		]
+	},
+	{
+		"tipo": "Eléctrico",
+		"modelos": [
+			{
+				"name": "Ecolite Spark EV",
+				"id": 22,
+				"kilometraje": 100,
+				"descripcion": "Compacto 100% eléctrico, perfecto para la ciudad con cero emisiones.",
+				"img_urls": [
+					"carro2f.png",
+					"carro2f-front.png",
+					"carro2f-side.png",
+					"carro2f-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad eléctrico avanzado con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Tecnología eléctrica de máxima eficiencia",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con gestión de carga",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor eléctrico de 150 kW con batería de iones de litio."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "200 caballos de fuerza instantáneos para ciudad."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "320 Nm de torque disponible desde 0 rpm."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos regenerativos para máxima eficiencia."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para confort urbano."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con gestión de energía y navegación."
+					}
+				]
+			},
+			{
+				"name": "Voltaris EcoDrive",
+				"id": 23,
+				"kilometraje": 100,
+				"descripcion": "Batería de larga duración y carga rápida, con diseño moderno.",
+				"img_urls": [
+					"carro2f2.png",
+					"carro2f2-front.png",
+					"carro2f2-side.png",
+					"carro2f2-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad eléctrico con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Batería de larga duración y carga rápida",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con gestión de carga remota",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor eléctrico de 180 kW con batería de 75 kWh."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "240 caballos de fuerza para un manejo eléctrico potente."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "360 Nm de torque instantáneo para aceleración suave."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos regenerativos con sistema de disco convencional."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión adaptativa para confort en ciudad."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 12 pulgadas con sistema de gestión de energía."
+					}
+				]
+			},
+			{
+				"name": "Electra Glide E1",
+				"id": 24,
+				"kilometraje": 100,
+				"descripcion": "Silencioso, eficiente y con buena autonomía, ideal para movilidad urbana.",
+				"img_urls": [
+					"carro2ld.png",
+					"carro2ld-front.png",
+					"carro2ld-side.png",
+					"carro2ld-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad eléctrico con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Autonomía extendida y consumo optimizado",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con planificación de rutas",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor eléctrico de 120 kW con batería de 60 kWh."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "160 caballos de fuerza para movilidad urbana eficiente."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "280 Nm de torque para arranques rápidos en ciudad."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenado regenerativo con recuperación de energía."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para confort urbano."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con información de eficiencia en tiempo real."
+					}
+				]
+			},
+			{
+				"name": "Solaris EcoCruiser",
+				"id": 25,
+				"kilometraje": 100,
+				"descripcion": "Crossover eléctrico con paneles solares auxiliares y gran espacio interior.",
+				"img_urls": [
+					"carro2t.png",
+					"carro2t-front.png",
+					"carro2t-side.png",
+					"carro2t-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad eléctrico avanzado con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Paneles solares auxiliares para carga complementaria",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con gestión solar integrada",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor eléctrico dual de 200 kW con batería de 82 kWh."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "270 caballos de fuerza para un crossover eléctrico potente."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "400 Nm de torque para capacidad SUV eléctrica."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Sistema de frenos regenerativos con asistencia electrónica."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión adaptable para confort y capacidad."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 12 pulgadas con gestión de energía solar y navegación."
+					}
+				]
+			},
+			{
+				"name": "EcoMotion Voltara",
+				"id": 26,
+				"kilometraje": 100,
+				"descripcion": "Tecnología ecológica y diseño aerodinámico para una conducción eficiente.",
+				"img_urls": [
+					"carro2.png",
+					"carro2-front.png",
+					"carro2-side.png",
+					"carro2-interior.png"
+				],
+				"caracteristicas": [
+					{
+						"titulo": "Seguridad",
+						"texto": "Sistema de seguridad eléctrico con 6 airbags",
+						"icono": "fi fi-rr-shield-check"
+					},
+					{
+						"titulo": "Eficiencia",
+						"texto": "Diseño aerodinámico para máxima autonomía",
+						"icono": "fi fi-rr-gas-pump"
+					},
+					{
+						"titulo": "Conectividad",
+						"texto": "Conectividad inteligente con planificación eficiente de rutas",
+						"icono": "fi fi-rr-wifi"
+					},
+					{
+						"titulo": "Motor",
+						"texto": "Motor eléctrico de 160 kW con batería de 68 kWh."
+					},
+					{
+						"titulo": "Potencia",
+						"texto": "220 caballos de fuerza para conducción eficiente."
+					},
+					{
+						"titulo": "Torque",
+						"texto": "350 Nm de torque instantáneo para aceleración suave."
+					},
+					{
+						"titulo": "Frenos",
+						"texto": "Frenos regenerativos con recuperación de energía optimizada."
+					},
+					{
+						"titulo": "Suspensión",
+						"texto": "Suspensión independiente para confort y eficiencia."
+					},
+					{
+						"titulo": "Tecnología",
+						"texto": "Pantalla de 10 pulgadas con sistema de eficiencia energética."
+					}
+				]
+			}
+		]
+	}
 ]

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LUNE - Catálogo Motos</title>
+
+        <!-- Estilos globales -->
+        <link rel="stylesheet" href="/styles/globals.css" />
+        <!-- Estilos específicos del catálogo -->
+        <link rel="stylesheet" href="/styles/style-catalogo.css" />
+
+        <!-- Script del catálogo de motos -->
+        <script src="/javaScript/catalogo-motos.script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <!-- Aside de tipos de motos -->
+            <aside class="aside aside-vehiculo">
+                <ul>
+                    <h3 class="h3 h3-sub_titulo_aside">MOTOS</h3>
+                    <li class="li li--hover" data-tipo="Deportivas" data-vehiculo="moto">
+                        <span>Deportiva</span>
+                    </li>
+                    <li class="li li--hover" data-tipo="Naked" data-vehiculo="moto">
+                        <span>Naked</span>
+                    </li>
+                    <li class="li li--hover" data-tipo="Adventure" data-vehiculo="moto">
+                        <span>Adventure</span>
+                    </li>
+                    <li class="li li--hover" data-tipo="Custom/Cruiser" data-vehiculo="moto">
+                        <span>Custom/Cruiser</span>
+                    </li>
+                    <li class="li li--hover" data-tipo="Scooters" data-vehiculo="moto">
+                        <span>Scooter</span>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Aside donde se mostrarán los modelos según el tipo -->
+            <aside class="aside aside--modelos" id="aside-modelos">
+                <!-- Aquí se mostrarán los modelos -->
+            </aside>
+
+            <!-- Sección de vista previa del modelo seleccionado -->
+            <section class="section vista-previa" id="vista-previa">
+                <!-- Se renderiza con el script -->
+            </section>
+        </main>
+    </body>
+</html>

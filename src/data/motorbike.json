@@ -1,0 +1,942 @@
+[
+  {"tipo": "Deportivas",
+    "modelos": [
+      {
+        "name": "Vortex R1",
+        "id": 27,
+        "kilometraje": 120,
+        "descripcion": "Motocicleta deportiva de alta performance, diseñada para velocidad y agilidad en pista.",
+        "img_urls": [
+          "deportiva-01.png",
+          "deportiva-01-side.png",
+          "deportiva-01-front.png",
+          "deportiva-01-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Sistema de frenos ABS y control de tracción",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de alta eficiencia para máximo rendimiento",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel digital con conectividad Bluetooth",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor 4 cilindros en línea de 1000cc con 200 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco dobles adelante y simple atrás con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión invertida de 43mm y monoamortiguador trasero ajustable"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Pantalla TFT de 5 pulgadas con modos de conducción"
+          }
+        ]
+        
+      },
+      {
+        "name": "Thunder RR",
+        "id": 28,
+        "kilometraje": 120,
+        "descripcion": "Deportiva de media cilindrada con tecnología de competición y diseño agresivo.",
+        "img_urls": [
+          "deportiva-02.png",
+          "deportiva-02-side.png",
+          "deportiva-02-front.png",
+          "deportiva-02-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Control de tracción y ABS de doble canal",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 600cc con gestión electrónica avanzada",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Conectividad para smartphone con app dedicada",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor 4 cilindros de 600cc con 120 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos radiales de 4 pistones con discos flotantes"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Horquilla invertida de 41mm completamente ajustable"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Cuadro de instrumentos digital con indicador de cambio"
+          }
+        ]
+        
+      },
+      {
+        "name": "Blitz S3",
+        "id": 29,
+        "kilometraje": 120,
+        "descripcion": "Deportiva ligera con excelente relación peso-potencia para circuitos urbanos.",
+        "img_urls": [
+          "deportiva-03.png",
+          "deportiva-03-side.png",
+          "deportiva-03-front.png",
+          "deportiva-03-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS y control de frenada combinada",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 400cc con bajo consumo",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla LCD con conexión para navegación",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 399cc con 45 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco simple adelante y atrás con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Horquilla convencional y monoamortiguador trasero"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de inyección electrónica avanzada"
+          }
+        ]
+        
+      },
+      {
+        "name": "Apex GP",
+        "id": 30,
+        "kilometraje": 120,
+        "descripcion": "Superdeportiva inspirada en MotoGP con electrónica de última generación.",
+        "img_urls": [
+          "deportiva-04.png",
+          "deportiva-04-side.png",
+          "deportiva-04-front.png",
+          "deportiva-04-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Control de tracción, wheelie y ABS de competición",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 1100cc con gestión de potencia variable",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Sistema de telemetría para pista",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor V4 de 1103cc con 220 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos Brembo Stylema con discos carbono-cerámicos"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión Öhlins electrónica totalmente ajustable"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Pantalla TFT de 6.5 pulgadas con telemetría avanzada"
+          }
+        ]
+        
+      }
+    ]
+  },
+  {"tipo": "Naked",
+    "modelos": [
+      {
+        "name": "Streetfighter X",
+        "id": 31,
+        "kilometraje": 150,
+        "descripcion": "Naked de alto rendimiento con motor potente y diseño agresivo.",
+        "img_urls": [
+          "naked-01.png",
+          "naked-01-side.png",
+          "naked-01-front.png",
+          "naked-01-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS de doble canal y control de tracción",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 950cc con buena relación consumo-potencia",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT con conectividad Bluetooth",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 950cc con 120 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos Brembo con discos flotantes de 320mm"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Horquilla invertida de 43mm y amortiguador trasero ajustable"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de modos de conducción múltiples"
+          }
+        ]
+        
+      },
+      {
+        "name": "Urban Rebel",
+        "id": 32,
+        "kilometraje": 150,
+        "descripcion": "Naked urbana con estilo retro-moderno y manejo ágil.",
+        "img_urls": [
+          "naked-02.png",
+          "naked-02-side.png",
+          "naked-02-front.png",
+          "naked-02-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS simple canal y llantas antipinchazos",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 400cc con bajo consumo urbano",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel LCD con indicaciones básicas",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor monocilíndrico de 400cc con 35 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Freno de disco simple adelante y atrás"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Horquilla convencional y doble amortiguador trasero"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de inyección electrónica"
+          }
+        ]
+        
+      },
+      {
+        "name": "Brutale 800",
+        "id": 33,
+        "kilometraje": 150,
+        "descripcion": "Naked de gama media con triple cilindro y carácter deportivo.",
+        "img_urls": [
+          "naked-03.png",
+          "naked-03-side.png",
+          "naked-03-front.png",
+          "naked-03-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS y control de tracción de 8 niveles",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 800cc con gestión electrónica avanzada",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT de 5 pulgadas con conectividad",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor tricilíndrico de 800cc con 110 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos radiales de 4 pistones con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Horquilla invertida de 43mm ajustable"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de modos de conducción y control de wheelie"
+          }
+        ]
+        
+      },
+      {
+        "name": "Speed Triple",
+        "id": 34,
+        "kilometraje": 150,
+        "descripcion": "Naked premium con motor tricilíndrico y electrónica avanzada.",
+        "img_urls": [
+          "naked-04.png",
+          "naked-04-side.png",
+          "naked-04-front.png",
+          "naked-04-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS de última generación y control de tracción IMU",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 1200cc con gestión inteligente de potencia",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT de 7 pulgadas con navegación",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor tricilíndrico de 1200cc con 180 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos Brembo Stylema con discos de 320mm"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión Öhlins electrónica totalmente ajustable"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de cámaras 360° y asistente de marcha atrás"
+          }
+        ]
+        
+      }
+    ]
+  },
+  {"tipo": "Adventure",
+    "modelos": [
+      {
+        "name": "Explorer 1200",
+        "id": 35,
+        "kilometraje": 200,
+        "descripcion": "Adventure touring de gran cilindrada para viajes largos y off-road.",
+        "img_urls": [
+          "adventure-01.png",
+          "adventure-01-side.png",
+          "adventure-01-front.png",
+          "adventure-01-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS multiterreno y control de tracción IMU",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 1200cc con gran autonomía",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT de 7 pulgadas con navegación",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 1200cc con 130 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos Brembo con ABS adaptable al terreno"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión semi-activa con 200mm de recorrido"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de navegación adventure con mapas off-road"
+          }
+        ]
+        
+      },
+      {
+        "name": "Desert Raid",
+        "id": 36,
+        "kilometraje": 200,
+        "descripcion": "Adventure especializada en off-road con suspensión de largo recorrido.",
+        "img_urls": [
+          "adventure-02.png",
+          "adventure-02-side.png",
+          "adventure-02-front.png",
+          "adventure-02-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS desconectable y chasis reforzado",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 900cc optimizado para terrenos difíciles",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel digital resistente al agua y polvo",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 900cc con 100 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco con sistema off-road"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión de 240mm de recorrido para terrenos extremos"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de navegación GPS resistente"
+          }
+        ]
+        
+      },
+      {
+        "name": "Touring Pro",
+        "id": 37,
+        "kilometraje": 200,
+        "descripcion": "Adventure touring con gran capacidad de carga y confort para viajes.",
+        "img_urls": [
+          "adventure-03.png",
+          "adventure-03-side.png",
+          "adventure-03-front.png",
+          "adventure-03-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS multiterreno y control de estabilidad",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 1050cc con gran autonomía",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT de 6.5 pulgadas con conectividad completa",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor tricilíndrico de 1050cc con 115 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco dobles adelante con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión electrónica adaptable a la carga"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Maletas integradas con sistema de apertura centralizada"
+          }
+        ]
+        
+      },
+      {
+        "name": "Urban Explorer",
+        "id": 38,
+        "kilometraje": 200,
+        "descripcion": "Adventure urbana con capacidad off-road ligera y manejo ágil.",
+        "img_urls": [
+          "adventure-04.png",
+          "adventure-04-side.png",
+          "adventure-04-front.png",
+          "adventure-04-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS de doble canal y control de tracción",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 850cc con buen rendimiento urbano",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT de 5 pulgadas con smartphone connect",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 850cc con 95 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco dobles adelante con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión de 180mm de recorrido"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de modos de conducción multiterreno"
+          }
+        ]
+        
+      }
+    ]
+  },
+  {"tipo": "Custom/Cruiser",
+    "modelos": [
+      {
+        "name": "Iron Glide",
+        "id": 39,
+        "kilometraje": 180,
+        "descripcion": "Cruiser clásico con motor V-twin y estilo retro.",
+        "img_urls": [
+          "cruiser-01.png",
+          "cruiser-01-side.png",
+          "cruiser-01-front.png",
+          "cruiser-01-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS básico para mayor seguridad",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 1800cc con par motor abundante",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Cuentavueltas analógico con indicadores básicos",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor V-twin de 1800cc refrigerado por aire"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Freno de disco simple adelante y atrás"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión trasera tradicional de doble amortiguador"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de inyección electrónica"
+          }
+        ]
+        
+      },
+      {
+        "name": "Boss Hoss",
+        "id": 40,
+        "kilometraje": 180,
+        "descripcion": "Cruiser de gran cilindrada con motor V8 y presencia imponente.",
+        "img_urls": [
+          "cruiser-02.png",
+          "cruiser-02-side.png",
+          "cruiser-02-front.png",
+          "cruiser-02-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Frenos reforzados para gran peso",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor V8 de 6200cc con enorme par motor",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel digital con información básica",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor V8 de 6.2L con 400 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco dobles adelante y simple atrás"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión reforzada para gran peso"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de escape personalizable"
+          }
+        ]
+        
+      },
+      {
+        "name": "Rebel 500",
+        "id": 41,
+        "kilometraje": 180,
+        "descripcion": "Custom moderna de media cilindrada ideal para ciudad y carretera.",
+        "img_urls": [
+          "cruiser-03.png",
+          "cruiser-03-side.png",
+          "cruiser-03-front.png",
+          "cruiser-03-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS y manillar bajo para mejor control",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 500cc con buen consumo",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel digital LCD con información básica",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 500cc con 45 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco simple adelante y atrás con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión convencional para manejo relajado"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de inyección electrónica PGM-FI"
+          }
+        ]
+        
+      },
+      {
+        "name": "Vulcan S",
+        "id": 42,
+        "kilometraje": 180,
+        "descripcion": "Cruiser deportiva con motor bicilíndrico y estilo moderno.",
+        "img_urls": [
+          "cruiser-04.png",
+          "cruiser-04-side.png",
+          "cruiser-04-front.png",
+          "cruiser-04-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS y posición de manejo ergonómica",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 650cc con buen par motor",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel digital con indicadores completos",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 650cc con 60 HP"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco adelante y atrás con ABS"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión trasera con ajuste de precarga"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de ajuste ergonómico para piloto"
+          }
+        ]
+        
+      }
+    ]
+  },
+  {"tipo": "Scooters",
+    "modelos": [
+      {
+        "name": "Urban Glide",
+        "id": 43,
+        "kilometraje": 80,
+        "descripcion": "Scooter urbano de 125cc ideal para movilidad diaria.",
+        "img_urls": [
+          "scooter-01.png",
+          "scooter-01-side.png",
+          "scooter-01-front.png",
+          "scooter-01-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Frenos CBS (sistema de frenado combinado)",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Consumo de 40km/l en ciudad",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Panel LCD con información básica",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor monocilíndrico de 125cc refrigerado por aire"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de tambor atrás y disco adelante"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión delantera telescópica y trasera monoshock"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Sistema de arranque eléctrico y patada"
+          }
+        ]
+        
+      },
+      {
+        "name": "Maxi Touring",
+        "id": 44,
+        "kilometraje": 80,
+        "descripcion": "Maxi-scooter de 300cc para viajes urbanos y periurbanos.",
+        "img_urls": [
+          "scooter-02.png",
+          "scooter-02-side.png",
+          "scooter-02-front.png",
+          "scooter-02-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "ABS en ambas ruedas y llantas antipinchazos",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 300cc con buen balance consumo-potencia",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla digital con conectividad smartphone",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor monocilíndrico de 300cc refrigerado por líquido"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco dobles adelante y simple atrás"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión delantera telescópica y trasera con doble amortiguador"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Maletero bajo asiento de 45L y toma USB"
+          }
+        ]
+        
+      },
+      {
+        "name": "Electric Glide",
+        "id": 45,
+        "kilometraje": 80,
+        "descripcion": "Scooter 100% eléctrico con autonomía urbana y diseño moderno.",
+        "img_urls": [
+          "scooter-03.png",
+          "scooter-03-side.png",
+          "scooter-03-front.png",
+          "scooter-03-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Sistema de frenado regenerativo y ABS",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Autonomía de 100km por carga",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla digital con app dedicada",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor eléctrico de 5kW con batería extraíble"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco combinados con regeneración"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión delantera y trasera convencional"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Carga rápida en 4 horas y modo eco"
+          }
+        ]
+        
+      },
+      {
+        "name": "GT Cruiser",
+        "id": 46,
+        "kilometraje": 80,
+        "descripcion": "Scooter premium de 500cc para viajes largos con máximo confort.",
+        "img_urls": [
+          "scooter-04.png",
+          "scooter-04-side.png",
+          "scooter-04-front.png",
+          "scooter-04-detail.png"
+        ],
+        "caracteristicas": [
+          {
+            "titulo": "Seguridad",
+            "texto": "Control de tracción y ABS de doble canal",
+            "icono": "fi fi-rr-shield-check"
+          },
+          {
+            "titulo": "Eficiencia",
+            "texto": "Motor de 500cc con buen rendimiento en carretera",
+            "icono": "fi fi-rr-gas-pump"
+          },
+          {
+            "titulo": "Conectividad",
+            "texto": "Pantalla TFT de 7 pulgadas con navegación",
+            "icono": "fi fi-rr-wifi"
+          },
+          {
+            "titulo": "Motor",
+            "texto": "Motor bicilíndrico de 500cc refrigerado por líquido"
+          },
+          {
+            "titulo": "Frenos",
+            "texto": "Frenos de disco dobles adelante y simple atrás"
+          },
+          {
+            "titulo": "Suspensión",
+            "texto": "Suspensión delantera telescópica y trasera con ajuste electrónico"
+          },
+          {
+            "titulo": "Tecnología",
+            "texto": "Asiento calefactable, parabrisas eléctrico y maletas integradas"
+          }
+        ]
+        
+      }
+    ]
+  }
+]
