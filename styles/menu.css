@@ -209,7 +209,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centra todo verticalmente */
+  justify-content: center; 
   opacity: 0;
   transition: opacity 1s ease-in-out;
   text-align: center;
@@ -234,5 +234,5 @@ iframe {
   color: white;
   font-size: 1.5em;
   margin-top: 15px;
-  position: static; /* esto es clave */
+  position: static; 
 }
