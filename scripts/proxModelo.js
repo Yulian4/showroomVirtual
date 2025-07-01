@@ -39,4 +39,4 @@ setInterval(() => {
     contenedores[index].classList.remove("activo")
     index = (index + 1)% contenedores.length
     contenedores[index].classList.add("activo")
-}, 15000);
+}, 10000);
