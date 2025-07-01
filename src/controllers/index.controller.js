@@ -19,6 +19,9 @@ export function renderCatalogCar(req, res) {
 export function renderCatalogMotorbike(req, res) {
     res.sendFile(path.join(__dirname, "../views/catalogo-motos.html"));
 }
+export function rederDetalle(req, res) {
+    res.sendFile(path.join(__dirname, "../views/detalleCarro.html"));
+}
 
 // Controlador para enviar el JSON de carros
 export function getCarsJson(req, res) {

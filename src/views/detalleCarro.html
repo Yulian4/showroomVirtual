@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo</title>
+    <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/detalles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body>
+    <div class="detalles">
+        <!-- <section id="section1" class="vistas">
+            <div class="carro-principal">
+              
+                <img id="imagen-principal" src="" alt="" class="img-carro" />
+            </div>
+        </section> -->
+        <section id="section2" class="vistasc">
+            <div class="vista1">
+                <div class="titulo-modelo">
+                    <h2 class="modelo" id="modelo-nombre">Cargando modelo...</h2>
+                </div>
+                <div class="imagen-kilo">
+                    <img id="imagen-principal" src="" alt="Vista del vehículo" class="imagen-vehiculo" />
+                    <div class="datos-kilometraje">
+                        <div class="numero" id="kilometraje">--</div>
+                        <p class="unidad">KM/H</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="section3" class="vistasc">
+
+            <div class="vista2">
+                <img id="imagen-tres" src="" alt="Vista técnica del vehículo" class="vista-tecnica" />
+                <div class="contenido-tecnico">
+                    <h3>ESPECIFICACIONES TÉCNICAS</h3>
+
+                    <div id="especificaciones" class="especificaciones-grid">
+
+                        <div class="especificacion">
+
+                            <span class="titulo-espec">Motor</span>
+                            <span class="valor-espec" id="motor">Cargando...</span>
+                        </div>
+                        <div class="especificacion">
+
+                            <p class="titulo-espec"></p>
+                            <p class="valor-espec" id="transmision">Cargando...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="section4" class="vistasc">
+            <div class="vista3">
+                <img id="imagen-cuatro" src="" alt="Vista interior del vehículo" class="vista-interior" />
+                <div class="contenido-caracteristicas">
+                    <h3>CARACTERÍSTICAS PRINCIPALES</h3>
+                    <div id="caracteristicas" class="caracteristicas-lista">
+                        <div class="caracteristica-item">
+                            <i class="fi fi-rr-shield-check"></i>
+                            <span>Sistema de seguridad avanzado</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fi fi-rr-gas-pump"></i>
+                            <span>Eficiencia de combustible optimizada</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fi fi-rr-wifi"></i>
+                            <span>Conectividad inteligente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5" class="vistas">
+
+            <div id="detalle-caracteristica" class="detalle-caracteristica">
+                <h3 id="detalle-titulo" class="detalle-titulo">Haz clic en un punto</h3>
+                <p id="detalle-texto" class="detalle-texto">Aquí aparecerá la descripción de la característica seleccionada.</p>
+            </div>
+
+            <div class="diagram-container">
+                <!-- <img src="../../public/img/carros/carro2ld.png" alt="Zonda" class="background-car" /> -->
+
+                <svg class="arc-overlay" viewBox="0 0 1000 510">
+                    <path d="M180,360 Q545,2 960,315" stroke="grey" stroke-width="2" fill="none" />
+
+
+                    <g class="point" transform="translate(180,360)">
+                        <circle r="8" fill="grey" />
+                        <text x="-20" y="20" fill="white">MOTOR</text>
+                    </g>
+                    <g class="point" transform="translate(265,285)">
+                        <circle r="8" fill="grey" />
+                        <text x="-55" y="6" fill="white">POTENCIA</text>
+                    </g>
+                    <g class="point" transform="translate(382,215)">
+                        <circle r="8" fill="grey" />
+                        <text x="-50" y="6" fill="white">TORQUE</text>
+                    </g>
+                    <g class="point" transform="translate(530,171)">
+                        <circle r="8" fill="grey" />
+                        <text x="-15" y="-11" fill="white">FRENOS</text>
+                    </g>
+                    <g class="point" transform="translate(700,182)">
+                        <circle r="8" fill="grey" />
+                        <text x="16" y="3" fill="white">SUSPENSIÓN</text>
+                    </g>
+                    <g class="point" transform="translate(850,245)">
+                        <circle r="8" fill="grey" />
+                        <text x="16" y="3" fill="white">SEGURIDAD</text>
+                    </g>
+                    <g class="point" transform="translate(960,315)">
+                        <circle r="8" fill="grey" />
+                        <text x="-20" y="20" fill="white">TECNOLOGIA</text>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+
+    </div>
+    <div class="puntos">
+        <!-- <a href="#section1" class="punto active" title="Vista principal"></a> -->
+        <a href="#section2" class="punto" title="Especificaciones"></a>
+        <a href="#section3" class="punto" title="Detalles técnicos"></a>
+        <a href="#section4" class="punto" title="Más información"></a>
+        <a href="#section-5" class="punto" title="Más información"></a>
+    </div>
+
+    <script src="/javaScript/aniDetalles.js"></script>
+    <script src="/javaScript/detalleCarro.js"></script>
+</body>
+
+</html>

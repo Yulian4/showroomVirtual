@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { renderIndex, renderCatalogCar, renderCatalogMotorbike, getCarsJson, getMotorbikesJson } from "../controllers/index.controller.js";
+import { renderIndex, renderCatalogCar, renderCatalogMotorbike, getCarsJson, getMotorbikesJson, rederDetalle } from "../controllers/index.controller.js";
 import { methods as authentication } from "../controllers/authentication.controller.js";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -11,9 +11,11 @@ const router = Router();
 router.get("/", renderIndex);
 router.get("/catalog-car", renderCatalogCar);
 router.get("/catalog-motorbike", renderCatalogMotorbike);
+router.get("/detalle/:id", rederDetalle);
 
 // Rutas para datos JSON
 router.get("/data/cars.json", getCarsJson);
 router.get("/data/motorbike.json", getMotorbikesJson);
+
 
 export default router;
