@@ -1,8 +1,10 @@
 let vehiculo;
 
 document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const carroId = urlParams.get('id');
+    const urlParams = window.location.toString().split('/');
+    console.log(urlParams[urlParams.length-1]);
+    const carroId = urlParams[urlParams.length-1];
+    console.log(carroId);
 
     if (!carroId) {
         mostrarError('No se encontró información del vehículo');
@@ -42,11 +44,11 @@ function encontrarVehiculo(data, id) {
 
 function mostrarDetalles(vehiculo) {
     document.getElementById('modelo-nombre').textContent = vehiculo.name;
-    document.getElementById('imagen-principal').src = `/assets/images/vehicles/cars/${vehiculo.img_url}`;
+    document.getElementById('imagen-principal').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
     document.getElementById('imagen-principal').alt = vehiculo.name;
     // document.getElementById('imagen-secundaria').src = `/public/img/carros/${vehiculo.img_url}`;
-    document.getElementById('imagen-tres').src = `/assets/images/vehicles/cars/${vehiculo.img_url}`;
-    document.getElementById('imagen-cuatro').src = `/assets/images/vehicles/cars/${vehiculo.img_url}`;
+    document.getElementById('imagen-tres').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
+    document.getElementById('imagen-cuatro').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
 
     document.getElementById('especificaciones').innerHTML = `
         <div class="categoria">
