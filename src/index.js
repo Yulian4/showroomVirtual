@@ -16,7 +16,7 @@ app.use(express.json());
 app.get("/", (req, res) => {  
   res.sendFile(path.join(__dirname, "views/index.html"));
 });
-app.get("/catalog", (req, res) => {  
+app.get("/catalog-car", (req, res) => {  
   res.sendFile(path.join(__dirname, "views/catalogo-carros.html"));
 });
 app.get("/register", (req, res) => {  
