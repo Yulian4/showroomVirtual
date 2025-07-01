@@ -1,4 +1,5 @@
 const socket = io();
+socket.emit('registrar', 'cliente');
 
 socket.on('mensajeAsesor', msg => {
     console.log('Recibido del asesor:', msg);

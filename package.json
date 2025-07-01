@@ -1,0 +1,25 @@
+{
+  "name": "showroomvirtual",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yulian4/showroomVirtual.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yulian4/showroomVirtual/issues"
+  },
+  "homepage": "https://github.com/Yulian4/showroomVirtual#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  },
+  "description": ""
+}

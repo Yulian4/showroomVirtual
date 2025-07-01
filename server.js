@@ -8,24 +8,35 @@ const io = new Server(server);
 
 app.use(express.static('public'));
 
+const clientes = new Set();
+const asesores = new Set();
+
 io.on('connection', socket => {
     console.log('Nuevo cliente conectado:', socket.id);
-setTimeout(() => {
-    console.log("Enviando mensaje de prueba");
-    socket.emit('mensajeAsesor', 'Mensaje de prueba desde el servidor');
-}, 3000);
+
+    socket.on('registrar', tipo => {
+        console.log(`Socket ${socket.id} registrado como: ${tipo}`);
+        if (tipo === 'cliente') {
+            clientes.add(socket);
+        } else if (tipo === 'asesor') {
+            asesores.add(socket);
+        }
+    });
+
     socket.on('mensajeCliente', msg => {
         console.log('Cliente dice:', msg);
-        socket.broadcast.emit('mensajeAsesor', msg);
+        asesores.forEach(s => s.emit('mensajeCliente', msg));
     });
 
     socket.on('mensajeAsesor', msg => {
         console.log('Asesor dice:', msg);
-        socket.broadcast.emit('mensajeCliente', msg); 
+        clientes.forEach(s => s.emit('mensajeAsesor', msg));
     });
 
     socket.on('disconnect', () => {
         console.log('Cliente desconectado:', socket.id);
+        clientes.delete(socket);
+        asesores.delete(socket);
     });
 });
 
