@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Cliente</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="cliente.js"></script>
+</head>
+<body style="background-color: black; color: white; font-family: sans-serif;">
+  <h1>Chat del Cliente</h1>
+  <div id="mensajes"></div>
+  <input id="mensaje" placeholder="Escribe un mensaje..." autofocus />
+  <button onclick="enviarMensaje()">Enviar</button>
+</body>
+</html>
