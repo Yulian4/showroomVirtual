@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proximos Modelos</title>
+  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/chatbot2.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+</head>
+
+<body>
+  <header>
+    <button id="btnMenu">☰ Menú</button>
+    <a href="../index.html"> <img class="logo" src="../assets/images/logo lune.png" alt="LUNE" /></a>
+    <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
+
+
+
+    <nav class="sideMenu" id="sideMenu">
+      <ul>
+        <li class="has-submenu">
+          Nuestros modelos
+          <div class="submenu-galeria">
+            <h3 class="title-catalogo">Catalogo Carros</h3>
+            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+            <h3 class="title-catalogo">Catalogo Motos</h3>
+            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+          </div>
+        </li>
+        <li><a href="#">Próximos modelos</a></li>
+        <li><a href="#">Agenda tu asesoría</a></li>
+        <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+        <li><a href="accesorios.html">Accesorios Originales</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sectionIA" class="oculto">
+    <div class="titleIA">
+      <p id="cerrarIA">X</p>
+      <h2>¿Cómo puedo ayudarte?</h2>
+    </div>
+    <div id="chatBox">
+      <!-- se agrega desde css con classname -->
+    </div>
+    <div class="respuesta">
+      <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+      <button onclick="sendPrompt()">➤</button>
+
+    </div>
+
+  </section>
+  <section class="sec1-pm">
+    <!-- solo titulo -->
+  </section>
+
+  <section class="title-mp">
+    <h2>Selene Nuit</h2>
+  </section>
+
+  <section class="contador-pm">
+    <div class="fechaContador">
+      <h2 title="titleContador">Revelación en...</h2>
+      <div>
+        <span id="dias"> </span> d ∙
+        <span id="horas"> </span>h ∙
+        <span id="minutos"> </span>m ∙
+        <span id="segundos"> </span>s ∙
+      </div>
+    </div>
+  </section>
+
+  <section class="carrusel">
+    <div class="contenedor activo">
+      <img src="../assets/images/slider1.png" alt="">
+      <div class="infoContenedor">
+        <h3>Torque inmediato</h3>
+        <p>El par motor es la fuerza real que define la respuesta de un vehículo. En el nuevo LUNE NOVA, hemos alcanzado
+          un torque de 790 Nm disponibles desde cero revoluciones gracias a su arquitectura eléctrica avanzada.</p>
+      </div>
+    </div>
+
+
+    <div class="contenedor">
+      <img src="../assets/images/slider2.png" alt="">
+      <div class="infoContenedor">
+        <h3>Aceleración que desafía la física</h3>
+        <p>Con un tiempo de 0 a 100 km/h en solo 2.8 segundos, el LUNE NOVA impone respeto sin necesidad de ruido ni
+          exhibición.
+          El sistema de tracción inteligente y su chasis activo garantizan una entrega de potencia estable y controlada,
+          incluso en las condiciones más exigentes.</p>
+      </div>
+    </div>
+
+
+    <div class="contenedor">
+      <img src="../assets/images/slider3.png" alt="">
+      <div class="infoContenedor">
+        <h3>Inteligencia adaptativa</h3>
+        <p>Equipado con el nuevo sistema LUNE IntuitDrive™, el vehículo aprende del comportamiento del conductor y
+          ajusta dinámicamente parámetros como suspensión, sensibilidad del acelerador, distribución de potencia y
+          climatización.
+          La experiencia de manejo evoluciona a medida que el vehículo lo hace contigo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logosFooter">
+      <div class="logo">
+        <i class="fi fi-brands-facebook"></i>
+        <p>FACEBOOK</p>
+      </div>
+      <div class="logo">
+        <i class="fi fi-brands-instagram"></i>
+        <p>INSTAGRAM</p>
+      </div>
+      <div class="logo">
+        <i class="fi fi-brands-youtube"></i>
+        <p>YOUTUBE</p>
+      </div>
+
+      <div class="logo">
+        <i class="fi fi-brands-twitter"></i>
+        <p>X</p>
+      </div>
+    </div>
+    <hr>
+    <div class="infoFooter">
+      <h2>Contacto</h2>
+      <p>Asesoramiento o compra</p>
+      <button>¡Contáctanos!</button>
+    </div>
+    <hr>
+
+    <div class="copyright">
+      <p>&copy 2025 Lune. Todos los derechos reservados <br>Sociedad de derecho Colombiano, con sede oficial en Armenia,
+        Quindio. Inscrita en el registro mercantil colombiano con el numero 64060977</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/index.js"></script>
+  <script src="../scripts/proxModelo.js"></script>
+  <script src="../scripts/chatbot.js"></script>
+</body>
+
+</html>
