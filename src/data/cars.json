@@ -167,6 +167,9 @@
 				"id": 4,
 				"kilometraje": 200,
 				"descripcion": "Equilibrio entre rendimiento y elegancia, con gran espacio interior y conectividad total.",
+        "img_urls": [
+          "Sedan-04-.png"
+        ],
 				"caracteristicas": [
 					{
 						"titulo": "Seguridad",
