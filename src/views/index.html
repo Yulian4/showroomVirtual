@@ -1,23 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUNE</title>
 
-    <link rel="stylesheet" href="/styles/globals.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUNE</title>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/chatbot2.css">
+  <link rel="stylesheet" href="/styles/index.css">
 </head>
+
 <body>
-    <h1>LUNE</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/catalog-motorbike">Catalogo de motos</a>
-            </li>
-            <li>
-                <a href="/catalog-car">Catalogo de carros</a>
-            </li>
-        </ul>
+  <header>
+    <button id="btnMenu">☰ Menú</button>
+    <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+    <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
+
+
+    <nav class="sideMenu" id="sideMenu">
+      <ul>
+        <li class="has-submenu">
+          Nuestros modelos
+          <div class="submenu-galeria">
+            <h3 class="title-catalogo">Catalogo Carros</h3>
+            <a href="/catalog-car"><img src="/assets/images/vehicles/cars/Sedan-02-.png" alt="" /></a>
+            <h3 class="title-catalogo">Catalogo Motos</h3>
+            <a href="/catalog-motorbike"><img src="/assets/images/vehicles/motorbikes/deportiva-01-side.png" alt="" /></a>
+          </div>
+        </li>
+        <li><a href="/menu-proximo">Próximos modelos</a></li>
+        <li><a href="/agenda">Agenda tu asesoría</a></li>
+        <li><a href="/sobreNosotros">Sobre nosotros</a></li>
+        <li><a href="/accesorios">Accesorios Originales</a></li>
+      </ul>
     </nav>
+  </header>
+
+  <section id="sectionIA" class="oculto">
+    <div class="titleIA">
+      <p id="cerrarIA">X</p>
+      <h2>¿Cómo puedo ayudarte?</h2>
+    </div>
+    <div id="chatBox">
+      <!-- se agrega desde css con classname -->
+    </div>
+    <div class="respuesta">
+      <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+      <button onclick="sendPrompt()">➤</button>
+
+    </div>
+  </section>
+
+  <section class="section-ppal">
+    <video src="/assets/video/videoAutoLune.mp4" autoplay muted loop></video>
+    <h1>Donde la elegancia <br> toca la luna</h1>
+
+  </section>
+
+  <section class="section2">
+    <div class="titleText2">
+      <h2>Proximamente...</h2>
+      <p>No es solo un auto, no es solo tecnología, es una nueva manera de avanzar. Muy pronto. Prepárate para el
+        cambio.</p>
+    </div>
+    <img src="/assets/images/bansBgLayers/nuevoModelo.jpg" alt="">
+  </section>
+
+
+  <section class="section3">
+    <a href="#">
+      <img src="/assets/images/bansBgLayers/motoSection3.jpg" alt="">
+    </a>
+    <a href="#">
+      <img src="/assets/images/bansBgLayers/carroSection3.jpg" alt="">
+    </a>
+  </section>
+
+  <section class="section4">
+    <h2>No solo creamos autos <br><span>Diseñamos el futuro</span></h2>
+    <p>Lune nace de una visión clara: movilidad sin ruido, sin emisiones y sin compromisos. Es mas que tecnología, es
+      evolución con propósito</p>
+  </section>
+
+
+
+  <footer>
+    <div class="logosFooter">
+      <div class="logo">
+        <i class="fi fi-brands-facebook"></i>
+        <p>FACEBOOK</p>
+      </div>
+      <div class="logo">
+        <i class="fi fi-brands-instagram"></i>
+        <p>INSTAGRAM</p>
+      </div>
+      <div class="logo">
+        <i class="fi fi-brands-youtube"></i>
+        <p>YOUTUBE</p>
+      </div>
+
+      <div class="logo">
+        <i class="fi fi-brands-twitter"></i>
+        <p>X</p>
+      </div>
+    </div>
+    <hr>
+    <div class="infoFooter">
+      <h2>Contacto</h2>
+      <p>Asesoramiento o compra</p>
+      <button>¡Contáctanos!</button>
+    </div>
+    <hr>
+
+    <div class="copyright">
+      <p>&copy 2025 Lune. Todos los derechos reservados <br>Sociedad de derecho Colombiano, con sede oficial en Armenia,
+        Quindio. Inscrita en el registro mercantil colombiano con el numero 64060977</p>
+    </div>
+  </footer>
+
+  <script src="/javaScript/index.js"></script>
+  <script src="/javaScript/chatbot.js"></script>
 </body>
+
 </html>

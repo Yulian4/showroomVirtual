@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios originales</title>
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/chatbot2.css">
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
+</head>
+<body>
+     <header>
+    <button id="btnMenu">☰ Menú</button>
+   <a href="../index.html"> <img class="logo" src="../assets/images/logo lune.png" alt="LUNE" /></a>
+    <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
+
+     <section id="sectionIA" class="oculto">
+    <div class="titleIA">
+      <p id="cerrarIA">X</p>
+      <h2>¿Cómo puedo ayudarte?</h2>
+    </div>
+    <div id="chatBox">
+      <!-- se agrega desde css con classname -->
+    </div>
+    <div class="respuesta">
+      <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+      <button onclick="sendPrompt()">➤</button>
+
+    </div>
+  </section>
+
+    <nav class="sideMenu" id="sideMenu">
+      <ul>
+        <li class="has-submenu">
+          Nuestros modelos
+          <div class="submenu-galeria">
+            <h3 class="title-catalogo">Catalogo Carros</h3>
+            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+            <h3 class="title-catalogo">Catalogo Motos</h3>
+            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+          </div>
+        </li>
+        <li><a href="menu-proximo.html">Próximos modelos</a></li>
+        <li><a href="#">Agenda tu asesoría</a></li>
+        <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+        <li><a href="#">Accesorios Originales</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="ppal-a">
+    <h2>Diseños que complementan la perfección</h1>
+  </section>
+
+  <section class="cascos">
+  <section class="accesorio active">
+    <img src="../assets/images/casco1.png" alt="">
+    <h3>Casco Inteligente</h3>
+  </section>
+    <section class="accesorio">
+      <img src="../assets/images/casco2.png" alt="">
+      <h3>Casco Inteligente</h3>
+  </section>
+    <section class="accesorio">
+      <img src="../assets/images/casco3.png" alt="">
+      <h3>Casco Inteligente</h3>
+  </section>
+    <section class="accesorio">
+      <img src="../assets/images/casco4.png" alt="">
+      <h3>Casco Inteligente</h3>
+  </section>
+  </section>
+
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/chatbot.js"></script>
+    <script src="../scripts/accesorios.js"></script>
+</body>
+</html>
