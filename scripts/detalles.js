@@ -44,7 +44,7 @@ function mostrarDetalles(vehiculo) {
     document.getElementById('modelo-nombre').textContent = vehiculo.name;
     document.getElementById('imagen-principal').src = `/public/img/carros/${vehiculo.img_url}`;
     document.getElementById('imagen-principal').alt = vehiculo.name;
-    document.getElementById('imagen-secundaria').src = `/public/img/carros/${vehiculo.img_url}`;
+    // document.getElementById('imagen-secundaria').src = `/public/img/carros/${vehiculo.img_url}`;
     document.getElementById('imagen-tres').src = `/public/img/carros/${vehiculo.img_url}`;
     document.getElementById('imagen-cuatro').src = `/public/img/carros/${vehiculo.img_url}`;
 
@@ -56,17 +56,16 @@ function mostrarDetalles(vehiculo) {
         <p>${vehiculo.descripcion}</p>
     `;
 
-
     const caracteristicasContenedor = document.getElementById('caracteristicas');
-    caracteristicasContenedor.innerHTML = ''; 
+    caracteristicasContenedor.innerHTML = '';
 
     if (vehiculo.caracteristicas && Array.isArray(vehiculo.caracteristicas)) {
-        vehiculo.caracteristicas.forEach(caract => {
+        vehiculo.caracteristicas.slice(0, 3).forEach(caract => {
             const item = document.createElement('div');
             item.className = 'caracteristica-item';
 
             const icono = document.createElement('i');
-            icono.className = caract.icono || 'fi fi-rr-check'; 
+            icono.className = caract.icono || 'fi fi-rr-check';
 
             const texto = document.createElement('span');
             texto.textContent = caract.texto;
@@ -78,6 +77,31 @@ function mostrarDetalles(vehiculo) {
     } else {
         caracteristicasContenedor.innerHTML = '<p>No hay características disponibles.</p>';
     }
+    const puntos = document.querySelectorAll('#section5 .point');
+
+    puntos.forEach(punto => {
+        punto.addEventListener('click', () => {
+            document.querySelectorAll('.point circle').forEach(c => c.setAttribute('fill', 'grey'));
+            const textoElem = punto.querySelector('text');
+            if (!textoElem) return;
+
+            const titulo = textoElem.textContent.trim().toUpperCase();
+
+            const caracteristica = vehiculo.caracteristicas.find(caract =>
+                caract.titulo && caract.titulo.toUpperCase() === titulo
+            );
+
+            if (caracteristica) {
+                document.getElementById('detalle-titulo').textContent = caracteristica.titulo;
+                document.getElementById('detalle-texto').textContent = caracteristica.texto;
+                punto.querySelector('circle').setAttribute('fill', 'white');
+            } else {
+                document.getElementById('detalle-titulo').textContent = titulo;
+                document.getElementById('detalle-texto').textContent = 'No hay descripción disponible.';
+            }
+        });
+    });
+
 }
 
 

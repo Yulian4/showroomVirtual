@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Orbitron:wght@400..900&family=Exo:wght@100..900&family=Merriweather:wght@300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
   --negro: #000000;
   --rojo: #096ce5af;
@@ -12,6 +12,7 @@
   --fuente-acento: "Orbitron", sans-serif;
   --fuente-secundaria: "Montserrat", sans-serif;
   --fuente-extra: "Exo", sans-serif;
+  ---fuente-arco:"Istok Web", sans-serif;
 }
 
 html,
@@ -81,11 +82,11 @@ body {
 }
 
 .modelo {
-  font-family: var(--fuente-base);
-  font-size: 5rem;
+  font-family: var(--fuente-extra);
+    letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 4rem;
   color: var(--gris-claro);
-  text-shadow: 0 0 10px var(--rojo);
-  position: relative;
   top: 100px;
   z-index: 2;
   margin-bottom: -10px;
@@ -107,7 +108,7 @@ body {
 .vistasc .vista2,
 .vistasc .vista3 {
   display: flex;
-  gap: 16vw;
+  gap: 3vw;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -139,6 +140,13 @@ body {
   font-size: 1.1rem;
   color: var(--gris-claro);
   text-align: justify;
+}
+.imagen-kilo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 17vw;
 }
 
 .datos-kilometraje {
@@ -173,7 +181,7 @@ body {
 .contenido-tecnico h3,
 .contenido-caracteristicas h3 {
   color: var(--gris-claro);
-  font-family: var(--fuente-extra);
+  font-family:var(--fuente-extra);
   font-size: 3rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -199,7 +207,8 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-    margin: 0;
+    margin: 2vw;
+    gap: 2vw;
 }
 
 ul {
@@ -240,3 +249,68 @@ ul {
   transform: scale(1.05);
 }
 
+
+#section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: var(--gris-oscuro);
+  overflow: hidden;
+}
+
+.detalle-caracteristica {
+  flex: 0 0 auto; 
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  z-index: 10;
+}
+
+
+.diagram-container {
+position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: -20vw;
+}
+
+
+.background-car {
+  width: 80%; 
+  height: auto;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.arc-overlay {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 35%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.point text {
+  font-size: 8px;
+  font-family: var(---fuente-arco);
+  text-transform: uppercase;
+}
+.detalle-titulo{
+color: var(--gris-claro);
+  font-size: 3rem;
+  font-family: var(--fuente-extra);
+   letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.detalle-texto{
+  font-size: 0.8rem;
+  font-family: var(--fuente-secundaria);
+}
