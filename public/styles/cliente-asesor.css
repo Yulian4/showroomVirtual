@@ -112,3 +112,35 @@ header{
  position: static;
  background-color: #0a0a0a;
 }
+
+.mensaje-asesor {
+  align-self: flex-start;      
+  background-color: #333;       
+  color: white;
+  padding: 10px 14px;
+  border-radius: var(--radio);
+  max-width: 75%;
+  word-wrap: break-word;
+  animation: aparecer 0.3s ease;
+}
+
+.mensaje-cliente {
+  align-self: flex-end;      
+  background-color: var(--color-acento); 
+  color: black;
+  padding: 10px 14px;
+  border-radius: var(--radio);
+  max-width: 75%;
+  word-wrap: break-word;
+  animation: aparecer 0.3s ease;
+}
+.mensaje-mio{
+  align-self: flex-end;         
+  background-color: var(--color-acento); 
+  color: black;
+  padding: 10px 14px;
+  border-radius: var(--radio);
+  max-width: 75%;
+  word-wrap: break-word;
+  animation: aparecer 0.3s ease;
+}
