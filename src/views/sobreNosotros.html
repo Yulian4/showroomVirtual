@@ -5,18 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre nosotros</title>
-  <link rel="stylesheet" href="../styles/menu.css">
-  <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="../styles/chatbot2.css">
+  <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/chatbot2.css">
+  <link rel="stylesheet" href="/styles/globals.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
 
 </head>
 
 <body>
-  <header>
+ <header>
     <button id="btnMenu">☰ Menú</button>
-    <a href="../index.html"> <img class="logo" src="../assets/images/logo lune.png" alt="LUNE" /></a>
+    <a href="/">
+            <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+        </a>
     <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
 
 
@@ -26,18 +29,18 @@
           Nuestros modelos
           <div class="submenu-galeria">
             <h3 class="title-catalogo">Catalogo Carros</h3>
-            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+            <a href="/catalog-car"><img src="/assets/images/vehicles/cars/Sedan-02-.png" alt="" /></a>
             <h3 class="title-catalogo">Catalogo Motos</h3>
-            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+            <a href="/catalog-motorbike"><img src="/assets/images/vehicles/motorbikes/deportiva-01-side.png" alt="" /></a>
           </div>
         </li>
-        <li><a href="menu-proximo.html">Próximos modelos</a></li>
-        <li><a href="#">Agenda tu asesoría</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="accesorios.html">Accesorios Originales</a></li>
+        <li><a href="/menu-proximo">Próximos modelos</a></li>
+        <li><a href="/cliente">Agenda tu asesoría</a></li>
+        <li><a href="/sobreNosotros">Sobre nosotros</a></li>
       </ul>
     </nav>
   </header>
+
   <section id="sectionIA" class="oculto">
     <div class="titleIA">
       <p id="cerrarIA">X</p>
@@ -66,7 +69,7 @@
   </section>
 
   <section class="sec2-sn">
-    <img src="../assets/images/motoRoja1.jpg" alt="">
+    <img src="/assets/images/bansBgLayers/motoRoja1.jpg" alt="">
     <p> <span>Misión</span> <br>
       Proveer soluciones de movilidad confiables y de alta calidad, acompañadas por un servicio personalizado que
       garantiza la satisfacción total de nuestros clientes. <br> <br>
@@ -123,8 +126,8 @@
     </div>
   </footer>
 
-  <script src="../scripts/index.js"></script>
-  <script src="../scripts/chatbot.js"></script>
+  <script src="/javaScript/index.js"></script>
+  <script src="/javaScript/chatbot.js"></script>
 
 </body>
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Asesor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/styles/globals.css">
+  <link rel="stylesheet" href="/styles/cliente-asesor.css"/>
+</head>
+<body>
+  <header>
+    <button id="btnMenu">☰ Menú</button>
+  <a href="/">
+            <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+        </a>
+    <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
+
+
+    <nav class="sideMenu" id="sideMenu">
+      <ul>
+        <li class="has-submenu">
+          Nuestros modelos
+          <div class="submenu-galeria">
+            <h3 class="title-catalogo">Catalogo Carros</h3>
+            <a href="/catalog-car"><img src="/assets/images/vehicles/cars/Sedan-02-.png" alt="" /></a>
+            <h3 class="title-catalogo">Catalogo Motos</h3>
+            <a href="/catalog-motorbike"><img src="/assets/images/vehicles/motorbikes/deportiva-01-side.png" alt="" /></a>
+          </div>
+        </li>
+        <li><a href="/menu-proximo">Próximos modelos</a></li>
+        <li><a href="/cliente">Agenda tu asesoría</a></li>
+        <li><a href="/sobreNosotros">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section id="sectionIA" class="oculto">
+    <div class="titleIA">
+      <p id="cerrarIA">X</p>
+      <h2>¿Cómo puedo ayudarte?</h2>
+    </div>
+    <div id="chatBox">
+      <!-- se agrega desde css con classname -->
+    </div>
+    <div class="respuesta">
+      <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+      <button onclick="sendPrompt()">➤</button>
+
+    </div>
+  </section>
+  <div class="contenedor-chat">
+    <div class="item1">
+      <div class="titulo">
+        <h1>Chat del Asesor</h1>
+      </div>
+      <div class="mensajes" id="mensajes"></div>
+      <div class="mensaje-entrada">
+        <input id="mensaje" placeholder="Escribe un mensaje..." autofocus/>
+        <button onclick="enviarMensaje()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="white"><path d="M2 21 23 12 2 3v7l15 2-15 2v7Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javaScript/asesor.js"></script> 
+    <script src="/javaScript/index.js"></script>
+  <script src="/javaScript/chatbot.js"></script>
+</body>
+</html>

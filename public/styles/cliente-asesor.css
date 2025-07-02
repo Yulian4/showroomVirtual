@@ -8,7 +8,7 @@
   --espaciado: 16px;
 }
 
-body {
+main {
   margin: 0;
   font-family: var(--fuente);
   background-color: var(--fondo);
@@ -106,4 +106,9 @@ body {
   cursor: pointer;
   display: flex;
    align-items: center; 
+}
+
+header{
+ position: static;
+ background-color: #0a0a0a;
 }
