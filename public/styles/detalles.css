@@ -306,6 +306,10 @@ ul {
   font-family: var(--fuente-secundaria);
 }
 
+.titulo-modelo{
+  width: 100%;
+}
+
 header {
   display: none;
 }
