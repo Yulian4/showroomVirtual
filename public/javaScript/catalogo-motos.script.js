@@ -64,7 +64,7 @@ function setupListeners() {
                     <div class="img-vista-previa-contenedor">
                         <img src="${imgSrc}" alt="${nombre}" class="img-vista-previa">
                     </div>
-                    <a href="detalle.html?id=${id}" class="btn-ver-mas button">Ver más información</a>
+                    <a href="detalleMoto/${id}" class="btn-ver-mas button">Ver más información</a>
                 `;
             });
         });
