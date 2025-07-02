@@ -46,9 +46,9 @@ function mostrarDetalles(vehiculo) {
     document.getElementById('modelo-nombre').textContent = vehiculo.name;
     document.getElementById('imagen-principal').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
     document.getElementById('imagen-principal').alt = vehiculo.name;
-    // document.getElementById('imagen-secundaria').src = `/public/img/carros/${vehiculo.img_url}`;
     document.getElementById('imagen-tres').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
     document.getElementById('imagen-cuatro').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
+    document.getElementById('imagen-secundaria').src = `/assets/images/vehicles/cars/${vehiculo.img_urls[0]}`;
 
     document.getElementById('especificaciones').innerHTML = `
         <div class="categoria">
