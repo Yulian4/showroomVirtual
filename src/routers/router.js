@@ -22,7 +22,7 @@ router.get("/admin", isAuthenticated, isAdmin, renderAdmin);
 router.get("/api/asesores", isAuthenticated, isAdmin, getAsesores);
 
 // // Registrar asesor (solo admin)
-router.get("/register-asesor", isAdmin, renderRegister);
+router.get("/register-asesor",isAuthenticated ,isAdmin, renderRegister);
 
 router.post("/register-asesor", isAuthenticated, isAdmin, registerAsesor);
 
