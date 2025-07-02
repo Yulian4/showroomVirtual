@@ -1,0 +1,30 @@
+[
+  {
+    "id": "admin-uuid",
+    "name": "Administrador",
+    "email": "admin@empresa.com",
+    "password": "$2a$12$Quel0IifIVnR8U0gAJW1pOQAB4Sp7VFea2R1/SO0XNUa/a8Dw3iUq",
+    "role": "admin"
+  },
+  {
+    "id": "8d470e27-6e41-4ec1-84f3-723878cf9444",
+    "name": "Miguel Ángel",
+    "email": "mvargasnavarro19@gmail.com",
+    "password": "$2b$10$2wETAUW4UuZois0eNgpxne3zBDPf1KdG66jtSJtMZ0Hi5QaiKX3ZG",
+    "role": "asesor"
+  },
+  {
+    "id": "b5b490c2-a649-4240-a9ad-20d904a8d885",
+    "name": "Yuliana",
+    "email": "yuliana@gmail.com",
+    "password": "$2b$10$eus7fIHT3SSrOulCl6T6eOO00D7bSz298Svbx4EkG6xRpoZIcfNpG",
+    "role": "asesor"
+  },
+  {
+    "id": "91507ccd-a925-494b-bd86-a95afbb82f46",
+    "name": "yuli",
+    "email": "yuli@gmail.com",
+    "password": "$2b$10$pTomC/vvWWnxPgfYRWwNTe6oJTehjZFaDE4xX3CO26OmSON.2nuS.",
+    "role": "asesor"
+  }
+]
