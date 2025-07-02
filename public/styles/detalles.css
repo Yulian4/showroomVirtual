@@ -1,24 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Orbitron:wght@400..900&family=Exo:wght@100..900&family=Merriweather:wght@300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-:root {
-  --negro: #000000;
-  --rojo: #096ce5af;
-  --gris-claro: #ffffff;
-  --gris-oscuro: #aaaaaa;
-  --degrade: linear-gradient(to bottom, #000000, #363434, #a19a9a);
-
-  --fuente-base: "Merriweather", serif;
-  --fuente-acento: "Orbitron", sans-serif;
-  --fuente-secundaria: "Montserrat", sans-serif;
-  --fuente-extra: "Exo", sans-serif;
-  ---fuente-arco: "Istok Web", sans-serif;
-}
-
 html,
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   overflow: hidden;
 }
@@ -281,7 +262,7 @@ ul {
 }
 
 .background-car {
-  width: 70%;
+  width: 700px;
   height: auto;
   opacity: 0.9;
   z-index: 1;

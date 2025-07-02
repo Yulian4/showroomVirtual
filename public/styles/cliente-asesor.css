@@ -1,13 +1,3 @@
-:root {
-  --fondo: #0a0a0a;
-  --fondo-chat: #1c1c1c;
-  --color-texto: #e6e6e6;
-  --color-acento: #a6b3b4;
-  --fuente: 'Montserrat', sans-serif;
-  --radio: 20px;
-  --espaciado: 16px;
-}
-
 main {
   margin: 0;
   font-family: var(--fuente);

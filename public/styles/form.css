@@ -28,7 +28,7 @@
     justify-content: end;
     align-items: center;
     background: #2A7B9B;
-    background: linear-gradient(115deg,rgba(42, 123, 155, 0) 50%, rgb(0, 0, 0) 50%);
+    background: var(--bg-gradient-form);
     z-index: 999;
 }
 
