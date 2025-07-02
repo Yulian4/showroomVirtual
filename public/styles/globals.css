@@ -44,6 +44,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-montserrat);
+    color: var(--text-color);
 }
 
 body{
