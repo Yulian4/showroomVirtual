@@ -1,14 +1,6 @@
-main {
-    display: flex;
-}
-body{
-    background-color: #0a0a0a;
-
-}
 aside {
     background: #1c1c1cb7;
     width: 250px;
-      margin-top: 12vh;
     padding: 20px;
     max-height: 80vh;
     height: 80vh;
@@ -122,6 +114,10 @@ h2.titulo-vista-previa {
     border-radius: 4px;
     text-align: center;
     width: fit-content;
+}
+
+header{
+    position: static;
 }
 
 .sideMenu{

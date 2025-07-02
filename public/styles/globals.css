@@ -1,13 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 
 :root{
     max-width: 100vw;
     margin: 0 auto;
-    color-scheme: light dark;
-
     /* Fonts */
+    --fondo: #0a0a0a;
+    --fondo-chat: #1c1c1c;
+    --color-texto: #e6e6e6;
+    --color-acento: #a6b3b4;
+    --radio: 20px;
+    --espaciado: 16px;
+    --negro: #000000;
+    --rojo: #096ce5af;
+    --gris-claro: #ffffff;
+    --gris-oscuro: #aaaaaa;
+    --degrade: linear-gradient(to bottom, #000000, #363434, #a19a9a);
+    --bg-gradient-form: linear-gradient(115deg,rgba(42, 123, 155, 0) 50%, rgb(0, 0, 0) 50%);
+    --bg-hover-button: radial-gradient(circle,#096ce5af 50%, #17509664 100%);
+    --bg-principal: #000000;
+    --secondaru-color: #096ce5af;
+    --text-color: #fff;
+
+    --fuente-base: "Merriweather", serif;
+    --fuente-acento: "Orbitron", sans-serif;
+    --fuente-secundaria: "Montserrat", sans-serif;
+    --fuente-extra: "Exo", sans-serif;
+    ---fuente-arco: "Istok Web", sans-serif;
     --font-exo: 'Exo', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
+    --fuente: 'Montserrat', sans-serif;
+    --fuenteCursiva: "Merriweather", serif;
 
 }
 
@@ -16,6 +44,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-montserrat);
+    color: var(--text-color);
+}
+
+body{
+  background: var(--bg-principal);
+}
+
+main{
+  display: flex;
 }
 
 li{
@@ -29,6 +66,7 @@ a{
 h1,h2,h3,h4,h5,h6{
     font-family: var(--font-exo);
     font-weight: 500;
+    color: var(--text-color);
 }
 
 img{
@@ -50,8 +88,8 @@ a{
   cursor: pointer;
 
   &:hover{
-background: radial-gradient(circle,rgba(64, 166, 197, 1) 50%, rgba(64, 166, 197, 0.52) 100%);
-    color: #fff;
+    background: var(--bg-hover-button);
+    color: var(--text-color);
   }
 }   
 
