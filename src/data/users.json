@@ -12,5 +12,12 @@
     "email": "mvargasnavarro19@gmail.com",
     "password": "$2b$10$2wETAUW4UuZois0eNgpxne3zBDPf1KdG66jtSJtMZ0Hi5QaiKX3ZG",
     "role": "asesor"
+  },
+  {
+    "id": "b5b490c2-a649-4240-a9ad-20d904a8d885",
+    "name": "Yuliana",
+    "email": "yuliana@gmail.com",
+    "password": "$2b$10$eus7fIHT3SSrOulCl6T6eOO00D7bSz298Svbx4EkG6xRpoZIcfNpG",
+    "role": "asesor"
   }
 ]

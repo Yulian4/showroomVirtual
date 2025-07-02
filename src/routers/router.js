@@ -25,9 +25,8 @@ router.get("/admin", isAuthenticated, isAdmin, renderAdmin);
 router.get("/api/asesores", isAuthenticated, isAdmin, getAsesores);
 
 // Registrar asesor (solo admin)
-router.get("/register-asesor", isAuthenticated, isAdmin, (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/register-asesor.html"));
-});
+router.get("/register-asesor", isAuthenticated, isAdmin, renderRegister);
+
 router.post("/register-asesor", isAuthenticated, isAdmin, registerAsesor);
 
 export default router;

@@ -83,4 +83,8 @@ async function login(req, res) {
    return res.redirect(user.role === "admin" ? "/admin" : "/asesor");
 }
 
+async function renderRegister(req, res) {
+    res.sendFile(path.join(__dirname, "../views/register-asesor.html"));
+}
+
 export const methods = { login };
