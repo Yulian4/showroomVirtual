@@ -83,8 +83,12 @@ async function login(req, res) {
    return res.redirect(user.role === "admin" ? "/admin" : "/asesor");
 }
 
-async function renderRegister(req, res) {
-    res.sendFile(path.join(__dirname, "../views/register-asesor.html"));
+export async function renderRegister (req, res) {
+  return  res.sendFile(path.join(__dirname, "../views/register-asesor.html"));
+}
+
+export async function renderLogin (req, res) {
+  return  res.sendFile(path.join(__dirname, "../views/login.html"));
 }
 
 export const methods = { login };

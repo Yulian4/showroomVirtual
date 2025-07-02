@@ -29,3 +29,14 @@ export function isAdmin(req, res, next) {
         return res.status(403).json({ message: "No autorizado" });
     }
 }
+
+/**
+ * Middleware para verificar si el usuario es asesor.
+ */
+export function isAsesor(req, res, next) {
+    if (req.user?.role === "asesor") {
+        next();
+    } else {
+        return res.status(403).json({ message: "No autorizado" });
+    }
+}
