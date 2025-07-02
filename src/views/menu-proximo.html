@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proximos Modelos</title>
-  <link rel="stylesheet" href="../styles/menu.css">
-  <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="../styles/chatbot2.css">
+  <link rel="stylesheet" href="/styles/globals.css">
+  <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/chatbot2.css">
+
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
 </head>
@@ -15,9 +17,10 @@
 <body>
   <header>
     <button id="btnMenu">☰ Menú</button>
-    <a href="../index.html"> <img class="logo" src="../assets/images/logo lune.png" alt="LUNE" /></a>
+  <a href="/">
+            <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+        </a>
     <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
-
 
 
     <nav class="sideMenu" id="sideMenu">
@@ -26,15 +29,14 @@
           Nuestros modelos
           <div class="submenu-galeria">
             <h3 class="title-catalogo">Catalogo Carros</h3>
-            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+            <a href="/catalog-car"><img src="/assets/images/vehicles/cars/Sedan-02-.png" alt="" /></a>
             <h3 class="title-catalogo">Catalogo Motos</h3>
-            <a href="#"><img src="../assets/images/coche-3d-con-fondo-simple.jpg" alt="" /></a>
+            <a href="/catalog-motorbike"><img src="/assets/images/vehicles/motorbikes/deportiva-01-side.png" alt="" /></a>
           </div>
         </li>
-        <li><a href="#">Próximos modelos</a></li>
-        <li><a href="#">Agenda tu asesoría</a></li>
-        <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-        <li><a href="accesorios.html">Accesorios Originales</a></li>
+        <li><a href="/menu-proximo">Próximos modelos</a></li>
+        <li><a href="/cliente">Agenda tu asesoría</a></li>
+        <li><a href="/sobreNosotros">Sobre nosotros</a></li>
       </ul>
     </nav>
   </header>
@@ -77,7 +79,7 @@
 
   <section class="carrusel">
     <div class="contenedor activo">
-      <img src="../assets/images/slider1.png" alt="">
+      <img src="/assets/images/bansBgLayers/slider1.png" alt="">
       <div class="infoContenedor">
         <h3>Torque inmediato</h3>
         <p>El par motor es la fuerza real que define la respuesta de un vehículo. En el nuevo LUNE NOVA, hemos alcanzado
@@ -87,7 +89,7 @@
 
 
     <div class="contenedor">
-      <img src="../assets/images/slider2.png" alt="">
+      <img src="/assets/images/bansBgLayers/slider2.png" alt="">
       <div class="infoContenedor">
         <h3>Aceleración que desafía la física</h3>
         <p>Con un tiempo de 0 a 100 km/h en solo 2.8 segundos, el LUNE NOVA impone respeto sin necesidad de ruido ni
@@ -99,7 +101,7 @@
 
 
     <div class="contenedor">
-      <img src="../assets/images/slider3.png" alt="">
+      <img src="/assets/images/bansBgLayers/slider3.png" alt="">
       <div class="infoContenedor">
         <h3>Inteligencia adaptativa</h3>
         <p>Equipado con el nuevo sistema LUNE IntuitDrive™, el vehículo aprende del comportamiento del conductor y
@@ -144,9 +146,9 @@
     </div>
   </footer>
 
-  <script src="../scripts/index.js"></script>
-  <script src="../scripts/proxModelo.js"></script>
-  <script src="../scripts/chatbot.js"></script>
+  <script src="/javaScript/index.js"></script>
+  <script src="/javaScript/chatbot.js"></script>
+  <script src="/javaScript/proxModelo.js"></script>
 </body>
 
 </html>

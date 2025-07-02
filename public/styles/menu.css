@@ -6,7 +6,7 @@
 
 /* SOBRE NOSOTROS */
 .sec1-sn {
-    background-image: url(../assets/images/bg-negro.jpg);
+    background-image: url(/assets/images/bansBgLayers/bg-negro.jpg);
     max-width: 100%;
     height: 100vh;
     padding: 350px 0 0 150px;
@@ -102,7 +102,7 @@ iframe {
 
 /* PROXIMO MODELO */
 .sec1-pm {
-    background-image: url(../assets/images/bg-carrohumo.jpg);
+    background-image: url(/assets/images/bansBgLayers/bg-carrohumo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

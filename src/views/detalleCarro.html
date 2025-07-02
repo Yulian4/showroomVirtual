@@ -8,10 +8,54 @@
     <link rel="stylesheet" href="/styles/globals.css">
     <link rel="stylesheet" href="/styles/detalles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/chatbot2.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
 </head>
 
 <body>
+  <header>
+    <button id="btnMenu">☰ Menú</button>
+  <a href="/">
+            <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+        </a>
+    <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
+
+
+    <nav class="sideMenu" id="sideMenu">
+      <ul>
+        <li class="has-submenu">
+          Nuestros modelos
+          <div class="submenu-galeria">
+            <h3 class="title-catalogo">Catalogo Carros</h3>
+            <a href="/catalog-car"><img src="/assets/images/vehicles/cars/Sedan-02-.png" alt="" /></a>
+            <h3 class="title-catalogo">Catalogo Motos</h3>
+            <a href="/catalog-motorbike"><img src="/assets/images/vehicles/motorbikes/deportiva-01-side.png" alt="" /></a>
+          </div>
+        </li>
+        <li><a href="/menu-proximo">Próximos modelos</a></li>
+        <li><a href="/cliente">Agenda tu asesoría</a></li>
+        <li><a href="/sobreNosotros">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sectionIA" class="oculto">
+    <div class="titleIA">
+      <p id="cerrarIA">X</p>
+      <h2>¿Cómo puedo ayudarte?</h2>
+    </div>
+    <div id="chatBox">
+      <!-- se agrega desde css con classname -->
+    </div>
+    <div class="respuesta">
+      <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+      <button onclick="sendPrompt()">➤</button>
+
+    </div>
+  </section>
+
     <div class="detalles">
         <!-- <section id="section1" class="vistas">
             <div class="carro-principal">
@@ -140,6 +184,8 @@
 
     <script src="/javaScript/aniDetalles.js"></script>
     <script src="/javaScript/detalleCarro.js"></script>
+      <script src="/javaScript/index.js"></script>
+  <script src="/javaScript/chatbot.js"></script>
 </body>
 
 </html>

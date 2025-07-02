@@ -1,10 +1,14 @@
 main {
     display: flex;
 }
+body{
+    background-color: #0a0a0a;
 
+}
 aside {
     background: #1c1c1cb7;
     width: 250px;
+      margin-top: 12vh;
     padding: 20px;
     max-height: 80vh;
     height: 80vh;
@@ -13,6 +17,7 @@ aside {
 
 aside.aside-vehiculo {
     z-index: 200;
+ 
     box-shadow: 10px 0px 15px -1px #17161699;
     -webkit-box-shadow: 10px 0px 15px -1px #0c0c0cf8;
     -moz-box-shadow: 10px 0px 15px -1px #17161699;

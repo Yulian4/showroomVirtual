@@ -322,3 +322,8 @@ ul {
   font-size: 0.8rem;
   font-family: var(--fuente-secundaria);
 }
+
+header{
+  position: static;
+  background-color: #000000;
+}
