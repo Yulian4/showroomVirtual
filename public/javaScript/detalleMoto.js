@@ -1,31 +1,32 @@
 let vehiculo;
 
 document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const motoId = urlParams.get('id'); // O podrías usar 'idMoto' si quieres diferenciarlas
+    const urlParams = window.location.toString().split('/');
+    console.log(urlParams[urlParams.length-1]);
+    const carroId = urlParams[urlParams.length-1];
+    console.log(carroId);
 
-    if (!motoId) {
-        mostrarError('No se encontró información de la moto');
+    if (!carroId) {
+        mostrarError('No se encontró información del vehículo');
         return;
     }
-
-    fetch("/src/models/motorBike.json")
+    fetch("/data/motorbike.json")
         .then(response => {
             if (!response.ok) throw new Error('Error al cargar datos');
             return response.json();
         })
         .then(data => {
-            vehiculo = encontrarVehiculo(data, motoId);
+            vehiculo = encontrarVehiculo(data, carroId);
             if (vehiculo) {
                 mostrarDetalles(vehiculo);
                 configurarObservadorKilometraje();
             } else {
-                mostrarError('Moto no encontrada');
+                mostrarError('Vehículo no encontrado');
             }
         })
         .catch(error => {
             console.error('Error:', error);
-            mostrarError('Error al cargar los datos de la moto');
+            mostrarError('Error al cargar los datos del vehículo');
         });
 });
 
@@ -43,15 +44,15 @@ function encontrarVehiculo(data, id) {
 
 function mostrarDetalles(vehiculo) {
     document.getElementById('modelo-nombre').textContent = vehiculo.name;
-    document.getElementById('imagen-principal').src = `/public/img/motos/${vehiculo.img_url}`;
+    document.getElementById('imagen-principal').src = `/assets/images/vehicles/motorbikes/${vehiculo.img_urls[0]}`;
     document.getElementById('imagen-principal').alt = vehiculo.name;
-    // document.getElementById('imagen-secundaria').src = `/public/img/motos/${vehiculo.img_url}`;
-    document.getElementById('imagen-tres').src = `/public/img/motos/${vehiculo.img_url}`;
-    document.getElementById('imagen-cuatro').src = `/public/img/motos/${vehiculo.img_url}`;
+    document.getElementById('imagen-secundaria').src = `/assets/images/vehicles/motorbikes/${vehiculo.img_urls[0]}`;
+    document.getElementById('imagen-tres').src = `/assets/images/vehicles/motorbikes/${vehiculo.img_urls[0]}`;
+    document.getElementById('imagen-cuatro').src = `/assets/images/vehicles/motorbikes/${vehiculo.img_urls[0]}`;
 
     document.getElementById('especificaciones').innerHTML = `
         <div class="categoria">
-            <img src="/public/img/assets/velo.png" alt="">
+            <img src="/assets/images/icons/velocimetro.png">
             <p id="categoria">${vehiculo.categoria}</p>
         </div>
         <p>${vehiculo.descripcion}</p>
