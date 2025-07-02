@@ -5,12 +5,17 @@ import Router from './routers/router.js';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
 import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+dotenv.config();
+
 const app = express();
 const server = createServer(app)
 const io = new Server(server);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-app.set("port", 4000);
+// Configura el puerto usando process.env.PORT (Render) o 3000 como fallback local
+const port = process.env.PORT || 3000;
+
 app.use(cookieParser());
 
 // Servir archivos estáticos
@@ -20,6 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Usar el router principal
 app.use("/", Router);
+
 const clientes = new Set();
 const asesores = new Set();
 
@@ -51,10 +57,7 @@ io.on('connection', socket => {
         asesores.delete(socket);
     });
 });
-// app.listen(app.get("port"), () => {
-//     console.log(`Server is running on port ${app.get("port")}`);
-//     console.log(`http://localhost:${app.get("port")}`);
 
-// });
-server.listen(3000,()=>
-console.log("servidor en http://localhost:3000"))
+server.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
+});

@@ -24,6 +24,7 @@ router.get("/api/asesores", isAuthenticated, isAdmin, getAsesores);
 // // Registrar asesor (solo admin)
 router.get("/register-asesor",isAuthenticated ,isAdmin, renderRegister);
 
+
 router.post("/register-asesor", isAuthenticated, isAdmin, registerAsesor);
 
 router.get("/", renderIndex);
