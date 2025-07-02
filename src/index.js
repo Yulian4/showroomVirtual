@@ -5,6 +5,8 @@ import Router from './routers/router.js';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
 import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 const server = createServer(app)
 const io = new Server(server);
@@ -56,5 +58,5 @@ io.on('connection', socket => {
 //     console.log(`http://localhost:${app.get("port")}`);
 
 // });
-server.listen(3000,()=>
+server.listen(process.env.PORT,()=>
 console.log("servidor en http://localhost:3000"))

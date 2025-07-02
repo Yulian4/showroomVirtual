@@ -19,5 +19,12 @@
     "email": "yuliana@gmail.com",
     "password": "$2b$10$eus7fIHT3SSrOulCl6T6eOO00D7bSz298Svbx4EkG6xRpoZIcfNpG",
     "role": "asesor"
+  },
+  {
+    "id": "91507ccd-a925-494b-bd86-a95afbb82f46",
+    "name": "yuli",
+    "email": "yuli@gmail.com",
+    "password": "$2b$10$pTomC/vvWWnxPgfYRWwNTe6oJTehjZFaDE4xX3CO26OmSON.2nuS.",
+    "role": "asesor"
   }
 ]
