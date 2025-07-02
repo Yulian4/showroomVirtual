@@ -5,6 +5,7 @@ socket.on('mensajeCliente', msg => {
   console.log('Recibido del cliente:', msg);  // <-- clave
   const mensajes = document.getElementById('mensajes');
   const div = document.createElement('div');
+  div.classList.add('mensaje-asesor');
   div.textContent = 'Cliente: ' + msg;
   mensajes.appendChild(div);
 });
@@ -16,6 +17,7 @@ function enviarMensaje() {
   if (!mensaje.trim()) return;
   const mensajes = document.getElementById('mensajes');
   const div = document.createElement('div');
+  div.classList.add('mensaje-mio');
   div.textContent = 'Tú: ' + mensaje;
   mensajes.appendChild(div);
   socket.emit('mensajeAsesor', mensaje);
