@@ -71,6 +71,7 @@ body {
   top: 100px;
   z-index: 2;
   margin-bottom: -10px;
+  width: 100%;
 }
 
 .img-carro {
@@ -258,7 +259,7 @@ ul {
   align-items: center;
   justify-content: center;
   width: 100%;
-  top: -10vw;
+  /* top: -15vw; */
 }
 
 .background-car {
@@ -267,6 +268,7 @@ ul {
   opacity: 0.9;
   z-index: 1;
 }
+
 .background-moto {
   width: 40%;
   height: auto;
@@ -304,6 +306,6 @@ ul {
   font-family: var(--fuente-secundaria);
 }
 
-header{ 
+header {
   display: none;
 }
