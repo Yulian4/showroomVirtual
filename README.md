@@ -78,13 +78,10 @@ showroomVirtual/
 
 ## Autores
 
-- [Yulian4](https://github.com/Yulian4)
-- Colaboradores: German Angarita, equipo ADSO
+- [Yuliana Yate](https://github.com/Yulian4)
+- [Miguel Ángel Vargas Navarro](https://github.com/Miguel-A-VN)
+-[Valentina](https://github.com/valen-tina)
 
 ## Licencia
 
 Este proyecto está bajo la licencia ISC.
-
----
-
-¿Tienes sugerencias o encontraste un bug? ¡[Abre
