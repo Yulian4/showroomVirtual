@@ -79,7 +79,9 @@ showroomVirtual/
 ## Autores
 
 - [Yuliana Yate](https://github.com/Yulian4)
+
 - [Miguel Ángel Vargas Navarro](https://github.com/Miguel-A-VN)
+
 -[Valentina](https://github.com/valen-tina)
 
 ## Licencia
