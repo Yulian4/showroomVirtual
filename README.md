@@ -82,7 +82,7 @@ showroomVirtual/
 
 - [Miguel Ángel Vargas Navarro](https://github.com/Miguel-A-VN)
 
--[Valentina](https://github.com/valen-tina)
+- [Valentina](https://github.com/valen-tina)
 
 ## Licencia
 
