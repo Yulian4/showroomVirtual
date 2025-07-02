@@ -4,12 +4,14 @@ import { fileURLToPath } from 'url';
 import Router from './routers/router.js';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
+import cookieParser from "cookie-parser";
 const app = express();
 const server = createServer(app)
 const io = new Server(server);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 app.set("port", 4000);
+app.use(cookieParser());
 
 // Servir archivos estáticos
 app.use(express.static(path.join(__dirname, "../public")));

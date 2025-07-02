@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LUNE - Iniciar sesion</title>
+
+		<link rel="stylesheet" href="/styles/globals.css" />
+		<link rel="stylesheet" href="/styles/form.css" />
+	</head>
+	<body>
+		<main class="main main--bg">
+			<div class="div--img-bg-form">
+				<img
+					src="/assets/images/bansBgLayers/P90243329_highRes_the-bmw-6-series-cou.jpg"
+					alt=""
+					class="img-bg-form"
+				/>
+			</div>
+			<div class="background">
+				<section class="section section--paragraph">
+					<h1>Bienvenido de nuevo</h1>
+					<p>
+						Hoy es un maravilloso dia, el cual podemos utilizar para sacarle la mejor productividad a nuestro tiempo
+					</p>
+	
+				</section>
+
+				<form
+					action="/login"
+					method="POST"
+					id="loginForm"
+					class="form"
+				>
+					<label for="email">E-mail</label>
+					<input required type="email" name="email" id="email" />
+					<div class="error errorEmail" id="errorEmail"></div>
+
+					<label for="password">Contraseña</label>
+					<input required type="password" name="password" id="password" />
+					<div class="error errorPassword" id="errorPassword"></div>
+
+					<button type="submit" class="button">Iniciar sesión</button>
+				</form>
+			</div>
+		</main>
+		<script src="/javaScript/form.script.js" defer></script>
+	</body>
+</html>

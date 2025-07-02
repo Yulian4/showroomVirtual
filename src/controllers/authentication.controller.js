@@ -3,35 +3,31 @@ import path from "path";
 import fs from "fs";
 import bcryptjs from "bcryptjs";
 import { v4 as uuidv4 } from "uuid";
+import JsonWebToken from "jsonwebtoken";
+import dotenv from "dotenv";
+import { validationResult } from "express-validator";
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 const usersPath = path.join(__dirname, "../data/users.json");
 
+/**
+ * Controlador para login de admin y asesores.
+ * Solo permite login si el usuario es admin o asesor.
+ */
 async function login(req, res) {
-    // Implementa tu lógica de login aquí
-    res.status(501).send({ status: "Error", message: "No implementado" });
-}
-
-async function register(req, res) {
-    const { name, lastName, email, password, confirmPassword } = req.body;
-
-    if (!name || !lastName || !email || !password || !confirmPassword) {
-        return res.status(400).send({
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({
             status: "Error",
-            message: "Los campos estan incompletos",
+            errors: errors.array(),
         });
     }
 
-    if (password !== confirmPassword) {
-        return res.status(400).send({
-            status: "Error",
-            message: "Las contraseñas no coinciden",
-        });
-    }
+    const { email, password } = req.body;
 
-    // Leer usuarios actualizados
+    // Leer usuarios
     let users = [];
     try {
         users = JSON.parse(fs.readFileSync(usersPath, "utf-8"));
@@ -39,38 +35,60 @@ async function register(req, res) {
         users = [];
     }
 
-    const valUser = users.find((user) => user.email === email);
+    // Buscar usuario por email
+    const user = users.find((u) => u.email === email);
 
-    if (valUser) {
-        return res.status(400).send({
-            status: "Error - 400",
-            message: "Este usuario ya existe",
+    if (!user) {
+        return res.status(400).json({
+            status: "Error",
+            errors: [{ param: "email", msg: "Usuario no encontrado" }],
         });
     }
 
-    const salt = await bcryptjs.genSalt(5);
-    const hashPassword = await bcryptjs.hash(password, salt);
+    // Validar contraseña
+    const isPasswordValid = await bcryptjs.compare(password, user.password);
+    if (!isPasswordValid) {
+        return res.status(401).json({
+            status: "Error",
+            errors: [{ param: "password", msg: "Contraseña incorrecta" }],
+        });
+    }
 
-    const newUser = {
-        id: uuidv4(),
-        name,
-        lastName,
-        email,
-        password: hashPassword,
+    // Solo permite login a admin o asesor
+    if (user.role !== "admin" && user.role !== "asesor") {
+        return res.status(403).json({
+            status: "Error",
+            errors: [{ param: "email", msg: "No tienes permisos para acceder" }],
+        });
+    }
+
+    // Generar token JWT
+    const token = JsonWebToken.sign(
+        { email: user.email, role: user.role },
+        process.env.JWT_SECRET,
+        { expiresIn: process.env.TOKEN_EXPIRATION }
+    );
+
+    // Opciones de cookie
+    const cookieOptions = {
+        expiresIn: new Date(
+            Date.now() + process.env.JWT_COOKIE_EXPIRATION * 24 * 60 * 60 * 1000
+        ),
+        path: "/",
     };
 
-    users.push(newUser);
+    res.cookie("jwt", token, cookieOptions);
 
-    fs.writeFileSync(usersPath, JSON.stringify(users, null, 2), "utf-8");
-
-    res.status(201).send({
-        status: "OK - 201",
-        message: "Usuario registrado correctamente",
-        redirect: "/",
-    });
+    // Redirige según el rol
+   return res.redirect(user.role === "admin" ? "/admin" : "/asesor");
 }
 
-export const methods = {
-    login,
-    register,
-};
+export async function renderRegister (req, res) {
+  return  res.sendFile(path.join(__dirname, "../views/register-asesor.html"));
+}
+
+export async function renderLogin (req, res) {
+  return  res.sendFile(path.join(__dirname, "../views/login.html"));
+}
+
+export const methods = { login };
