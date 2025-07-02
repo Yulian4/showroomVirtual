@@ -4,18 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUNE</title>
+  <title>Proximos Modelos</title>
+  <link rel="stylesheet" href="/styles/globals.css">
+  <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/chatbot2.css">
+
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
-  <link rel="stylesheet" href="/styles/globals.css">
-  <link rel="stylesheet" href="/styles/chatbot2.css">
-  <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
   <header>
     <button id="btnMenu">☰ Menú</button>
-    <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+  <a href="/">
+            <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+        </a>
     <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
 
 
@@ -51,40 +55,62 @@
       <button onclick="sendPrompt()">➤</button>
 
     </div>
-  </section>
-
-  <section class="section-ppal">
-    <video src="/assets/video/videoAutoLune.mp4" autoplay muted loop></video>
-    <h1>Donde la elegancia <br> toca la luna</h1>
 
   </section>
+  <section class="sec1-pm">
+    <!-- solo titulo -->
+  </section>
 
-  <section class="section2">
-    <div class="titleText2">
-      <h2>Proximamente...</h2>
-      <p>No es solo un auto, no es solo tecnología, es una nueva manera de avanzar. Muy pronto. Prepárate para el
-        cambio.</p>
+  <section class="title-mp">
+    <h2>Selene Nuit</h2>
+  </section>
+
+  <section class="contador-pm">
+    <div class="fechaContador">
+      <h2 title="titleContador">Revelación en...</h2>
+      <div>
+        <span id="dias"> </span> d ∙
+        <span id="horas"> </span>h ∙
+        <span id="minutos"> </span>m ∙
+        <span id="segundos"> </span>s ∙
+      </div>
     </div>
-    <img src="/assets/images/bansBgLayers/nuevoModelo.jpg" alt="">
   </section>
 
+  <section class="carrusel">
+    <div class="contenedor activo">
+      <img src="/assets/images/bansBgLayers/slider1.png" alt="">
+      <div class="infoContenedor">
+        <h3>Torque inmediato</h3>
+        <p>El par motor es la fuerza real que define la respuesta de un vehículo. En el nuevo LUNE NOVA, hemos alcanzado
+          un torque de 790 Nm disponibles desde cero revoluciones gracias a su arquitectura eléctrica avanzada.</p>
+      </div>
+    </div>
 
-  <section class="section3">
-    <a href="#">
-      <img src="/assets/images/bansBgLayers/motoSection3.jpg" alt="">
-    </a>
-    <a href="#">
-      <img src="/assets/images/bansBgLayers/carroSection3.jpg" alt="">
-    </a>
+
+    <div class="contenedor">
+      <img src="/assets/images/bansBgLayers/slider2.png" alt="">
+      <div class="infoContenedor">
+        <h3>Aceleración que desafía la física</h3>
+        <p>Con un tiempo de 0 a 100 km/h en solo 2.8 segundos, el LUNE NOVA impone respeto sin necesidad de ruido ni
+          exhibición.
+          El sistema de tracción inteligente y su chasis activo garantizan una entrega de potencia estable y controlada,
+          incluso en las condiciones más exigentes.</p>
+      </div>
+    </div>
+
+
+    <div class="contenedor">
+      <img src="/assets/images/bansBgLayers/slider3.png" alt="">
+      <div class="infoContenedor">
+        <h3>Inteligencia adaptativa</h3>
+        <p>Equipado con el nuevo sistema LUNE IntuitDrive™, el vehículo aprende del comportamiento del conductor y
+          ajusta dinámicamente parámetros como suspensión, sensibilidad del acelerador, distribución de potencia y
+          climatización.
+          La experiencia de manejo evoluciona a medida que el vehículo lo hace contigo.</p>
+      </div>
+    </div>
   </section>
-
-  <section class="section4">
-    <h2>No solo creamos autos <br><span>Diseñamos el futuro</span></h2>
-    <p>Lune nace de una visión clara: movilidad sin ruido, sin emisiones y sin compromisos. Es mas que tecnología, es
-      evolución con propósito</p>
-  </section>
-
-
 
   <footer>
     <div class="logosFooter">
@@ -122,6 +148,7 @@
 
   <script src="/javaScript/index.js"></script>
   <script src="/javaScript/chatbot.js"></script>
+  <script src="/javaScript/proxModelo.js"></script>
 </body>
 
 </html>

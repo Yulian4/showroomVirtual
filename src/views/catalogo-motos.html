@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LUNE - Catálogo Motos</title>
 
-        <!-- Estilos globales -->
-        <link rel="stylesheet" href="/styles/globals.css" />
-        <!-- Estilos específicos del catálogo -->
-        <link rel="stylesheet" href="/styles/style-catalogo.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUNE - Catálogo Motos</title>
 
-        <!-- Script del catálogo de motos -->
-        <script src="/javaScript/catalogo-motos.script.js" defer></script>
-    </head>
-    <body>
-        <main>
-            <!-- Aside de tipos de motos -->
-            <aside class="aside aside-vehiculo">
-                <ul>
-                    <h3 class="h3 h3-sub_titulo_aside">MOTOS</h3>
-                    <li class="li li--hover" data-tipo="Deportivas" data-vehiculo="moto">
-                        <span>Deportiva</span>
-                    </li>
-                    <li class="li li--hover" data-tipo="Naked" data-vehiculo="moto">
-                        <span>Naked</span>
-                    </li>
-                    <li class="li li--hover" data-tipo="Adventure" data-vehiculo="moto">
-                        <span>Adventure</span>
-                    </li>
-                    <li class="li li--hover" data-tipo="Custom/Cruiser" data-vehiculo="moto">
-                        <span>Custom/Cruiser</span>
-                    </li>
-                    <li class="li li--hover" data-tipo="Scooters" data-vehiculo="moto">
-                        <span>Scooter</span>
-                    </li>
-                </ul>
-            </aside>
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <!-- Estilos específicos del catálogo -->
+    <link rel="stylesheet" href="/styles/style-catalogo.css" />
 
-            <!-- Aside donde se mostrarán los modelos según el tipo -->
-            <aside class="aside aside--modelos" id="aside-modelos">
-                <!-- Aquí se mostrarán los modelos -->
-            </aside>
+    <!-- Script del catálogo de motos -->
+    <script src="/javaScript/catalogo-motos.script.js" defer></script>
+    <link rel="stylesheet" href="/styles/chatbot2.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
 
-            <!-- Sección de vista previa del modelo seleccionado -->
-            <section class="section vista-previa" id="vista-previa">
-                <!-- Se renderiza con el script -->
-            </section>
-        </main>
-    </body>
+<body>
+    <header>
+        <button id="btnMenu">☰ Menú</button>
+        <a href="/">
+            <img class="logo" src="assets/images/logo/logoLUNE.png" alt="LUNE" />
+        </a>
+        <i class="fi fi-rr-messages" onclick="mostrarChat()"></i>
+
+
+        <nav class="sideMenu" id="sideMenu">
+            <ul>
+                <li class="has-submenu">
+                    Nuestros modelos
+                    <div class="submenu-galeria">
+                        <h3 class="title-catalogo">Catalogo Carros</h3>
+                        <a href="/catalog-car"><img src="/assets/images/vehicles/cars/Sedan-02-.png" alt="" /></a>
+                        <h3 class="title-catalogo">Catalogo Motos</h3>
+                        <a href="/catalog-motorbike"><img src="/assets/images/vehicles/motorbikes/deportiva-01-side.png"
+                                alt="" /></a>
+                    </div>
+                </li>
+                <li><a href="/menu-proximo">Próximos modelos</a></li>
+                <li><a href="/cliente">Agenda tu asesoría</a></li>
+                <li><a href="/sobreNosotros">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sectionIA" class="oculto">
+        <div class="titleIA">
+            <p id="cerrarIA">X</p>
+            <h2>¿Cómo puedo ayudarte?</h2>
+        </div>
+        <div id="chatBox">
+            <!-- se agrega desde css con classname -->
+        </div>
+        <div class="respuesta">
+            <input type="text" id="promptUsuario" placeholder="Escribe tu pregunta">
+
+            <button onclick="sendPrompt()">➤</button>
+
+        </div>
+
+    </section>
+    <main>
+        <!-- Aside de tipos de motos -->
+        <aside class="aside aside-vehiculo">
+            <ul>
+                <h3 class="h3 h3-sub_titulo_aside">MOTOS</h3>
+                <li class="li li--hover" data-tipo="Deportivas" data-vehiculo="moto">
+                    <span>Deportiva</span>
+                </li>
+                <li class="li li--hover" data-tipo="Naked" data-vehiculo="moto">
+                    <span>Naked</span>
+                </li>
+                <li class="li li--hover" data-tipo="Adventure" data-vehiculo="moto">
+                    <span>Adventure</span>
+                </li>
+                <li class="li li--hover" data-tipo="Custom/Cruiser" data-vehiculo="moto">
+                    <span>Custom/Cruiser</span>
+                </li>
+                <li class="li li--hover" data-tipo="Scooters" data-vehiculo="moto">
+                    <span>Scooter</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Aside donde se mostrarán los modelos según el tipo -->
+        <aside class="aside aside--modelos" id="aside-modelos">
+            <!-- Aquí se mostrarán los modelos -->
+        </aside>
+
+        <!-- Sección de vista previa del modelo seleccionado -->
+        <section class="section vista-previa" id="vista-previa">
+            <!-- Se renderiza con el script -->
+        </section>
+    </main>
+    <script src="/javaScript/index.js"></script>
+    <script src="/javaScript/chatbot.js"></script>
+</body>
+
 </html>

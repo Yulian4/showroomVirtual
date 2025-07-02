@@ -1,23 +1,23 @@
 [
   {
-    "id": "0aa9814f-4dcc-45f6-9b8c-3a063a1cda8c",
-    "name": "Carlos",
-    "lastName": "Vargas",
-    "email": "carlosvargas@gmail.com",
-    "password": "$2b$05$Pi08OAzmFp/TYuVHUMnknePaEjxD/ngTlTvgtQzUIdk2FGK4t.7kW"
+    "id": "admin-uuid",
+    "name": "Administrador",
+    "email": "admin@empresa.com",
+    "password": "$2a$12$Quel0IifIVnR8U0gAJW1pOQAB4Sp7VFea2R1/SO0XNUa/a8Dw3iUq",
+    "role": "admin"
   },
   {
-    "id": "ad79a7a2-6438-4a76-a5ae-ba8bd556782b",
-    "name": "yuliana",
-    "lastName": "yate",
-    "email": "yuli@gmail.com",
-    "password": "$2b$05$WeE5SouW.g.rL9BBjtWucOJR0zDmVIxEHdlX0XTbsLUhm21rPg3e2"
+    "id": "8d470e27-6e41-4ec1-84f3-723878cf9444",
+    "name": "Miguel Ángel",
+    "email": "mvargasnavarro19@gmail.com",
+    "password": "$2b$10$2wETAUW4UuZois0eNgpxne3zBDPf1KdG66jtSJtMZ0Hi5QaiKX3ZG",
+    "role": "asesor"
   },
   {
-    "id": "fae5a861-234d-41d0-9567-655934e6bc42",
-    "name": "Kevin",
-    "lastName": "Burgos",
-    "email": "burgosk@gmail.com",
-    "password": "$2b$05$3PHwPnam4LMpirs42TcL..ynROPFJzONb7fPOgNc9IzWyAoMU7RxO"
+    "id": "b5b490c2-a649-4240-a9ad-20d904a8d885",
+    "name": "Yuliana",
+    "email": "yuliana@gmail.com",
+    "password": "$2b$10$eus7fIHT3SSrOulCl6T6eOO00D7bSz298Svbx4EkG6xRpoZIcfNpG",
+    "role": "asesor"
   }
 ]
